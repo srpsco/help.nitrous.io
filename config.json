@@ -1,0 +1,21 @@
+{
+	"template_dir": "templates", 
+	"content_dir": "articles",
+	"output_dir": "output",
+
+	"server": { 
+		"port": 9009
+	},
+
+	"plugins": {
+		"content_handler": "punch-simple-markdown-content-handler"
+	},
+
+	"bundles": {
+		"/css/all.css": [
+			"/css/normalize.css",	
+			"/css/main.css",
+			"/css/site.less"
+		]	
+	}
+}

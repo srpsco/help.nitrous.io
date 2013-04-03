@@ -1,0 +1,7 @@
+{ "name" : "laktek.com",
+	"version" : "1.0.0",
+	"dependencies" : {
+	 	"punch": ">= 0.5.0",
+	 	"punch-simple-markdown-content-handler": ">= 0.0.3"
+ 	} 
+}

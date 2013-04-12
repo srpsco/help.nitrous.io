@@ -8,15 +8,21 @@ How to preview:
 
 * Clone the repo.
 
-* In the terminal run, `punch s`
+* run `npm install`
 
-* Visit `http://localhost:9009`
+* Then `punch s`
+
+* Articles are in `articles` directory (use the structure in `articles/box-new` for the tags and content).
+
+* Templates and layouts are in `templates` directory. (`_layout.mustache` is the base layout, other layouts are added as partials)
+
+* To preview an article, visit: `http://localhost:9009/box-new`
 
 Todo:
 
-* Organize articles to sections.
+* Create main index and category index pages
 
-* Create main index and section index pages
+* Move the `screenshots` directory
 
 * Implement simple search (Google Site Search?)
 

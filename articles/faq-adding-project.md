@@ -1,3 +1,11 @@
+---
+title: Upload an existing application
+published: true
+tags:
+- faq
+- getting-started
+---
+
 We get a lot of emails asking how to upload applications to an Action.IO box. There are a few ways you can do this:
 
 * [SFTP](#sftp)

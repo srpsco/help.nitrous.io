@@ -2,7 +2,8 @@
 title: Create a Box
 published: true
 tags:
-- overview 
+- overview
+- boxes
 ---
 
 Development Boxes or "boxes" are the heart and soul of the Action.IO experience. Many of you will only have one box, though the more mature polyglot programmer might have 10 or even 20 different boxes for each of their projects.

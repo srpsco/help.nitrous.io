@@ -1,3 +1,11 @@
+---
+title: Server disconnects on browser close
+published: true
+tags:
+- faq
+- web-ide
+---
+
 # Server / process disconnects on browser close
 
 If you're running a server or long-running process that you don't want to interrupt when you mistakenly close your browser window, we suggest using a terminal multiplexer like [screen](http://www.gnu.org/software/screen/) or [tmux](http://tmux.sourceforge.net/) and creating a persistent session to which you can reconnect.

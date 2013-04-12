@@ -1,3 +1,11 @@
+---
+title: Uploading files via the Web IDE
+published: true
+tags:
+- web-ide
+- file-uploads
+---
+
 Uploading files to Action.IO is quick and easy. There's no need to FTP or SCP files to your development box (although you can, if you want to).
 
 <p class="alert">This article describes how to upload individual files. If you need to upload an entire project / complex directory structure, please read [this article]()</p>

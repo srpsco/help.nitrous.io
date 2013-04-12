@@ -1,3 +1,11 @@
+---
+title: Box templates
+published: true
+tags:
+- overview
+- boxes
+---
+
 A **[Box Template](https://www.action.io/app#/boxes/new)** is a pre-configured development environment. Box templates usually have one primary language / framework installed and occasionally a few supporting languages installed.  We recommend when customizing your templates that you only install what is necessary for your application to run appropriately to reduce the chance of runtime or configuration errors.
 
 [Action.IO](https://www.action.io) provides some common box templates for you to get started quickly and easily.  You can ignore the "download" or "installation" instructions on all of the Getting Started sections of these languages and platforms, we've already set everything up for you!

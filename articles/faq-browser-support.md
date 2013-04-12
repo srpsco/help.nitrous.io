@@ -1,3 +1,11 @@
+---
+title: Browser support
+published: true
+tags:
+- faq
+- browsers
+---
+
 ### Recommended Browsers
 
 We recommend that you use a modern web browser that support [websockets](http://en.wikipedia.org/wiki/WebSocket). Our recommendations are:

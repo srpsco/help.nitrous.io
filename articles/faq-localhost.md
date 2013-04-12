@@ -1,3 +1,12 @@
+---
+title: Problems previewing my application
+published: true
+tags:
+- faq
+- web-ide
+- previewing
+---
+
 Due to the way we handle network configuration on boxes, you will not be able to bind http servers to localhost (127.0.0.1).
 
 Your application will need to run on 0.0.0.0 or a specific IP address. Listening on port 3000 will allow you to use our preview menu for a shortcut.

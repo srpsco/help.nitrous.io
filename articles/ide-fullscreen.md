@@ -1,3 +1,10 @@
+---
+title: Making the console fullscreen
+published: true
+tags:
+- web-ide
+---
+
 If you want to just code in your browser using the web console (good for coding on the iPad), just click the "expand" icon at the right of the console header.
 
 ![Fullscreen Console](https://raw.github.com/action-io/action-assets/master/support/screenshots/ide-fullscreen.png)

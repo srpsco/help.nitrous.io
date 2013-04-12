@@ -1,3 +1,11 @@
+---
+title: Deplying to Heroku
+published: true
+tags:
+- deployment
+- heroku
+---
+
 These instructions will help you deploy your [Rails 3.2](http://guides.rubyonrails.org/3_2_release_notes.html) application to [Heroku](https://heroku.com).
 
 ### Things you should know

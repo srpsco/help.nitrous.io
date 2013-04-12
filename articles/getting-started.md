@@ -1,3 +1,11 @@
+---
+title: Getting started
+published: true
+tags:
+- overview
+- accounts
+---
+
 Welcome to Action.IO!
 
 Our goal is to provide you with a streamlined, beautiful and, enjoyable programming experience.

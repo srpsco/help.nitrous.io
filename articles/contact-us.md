@@ -1,3 +1,11 @@
+---
+title: Contact us
+published: true
+tags:
+- overview
+- about
+---
+
 If you'd like to get in touch:
 
 Support inquiries: [support@action.io](mailto:support@action.io)

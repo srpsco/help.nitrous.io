@@ -1,3 +1,11 @@
+---
+title: Mac preferences
+published: false
+tags:
+- faq
+- mac
+---
+
 Your Action.IO for Mac preferences allow you to configure the connection between your computer and your boxes running on Action.IO. For example, you can add/remove SSH keys, setup tunneling to preview applications you are developing, and manage shared folders for local editing.
 
 ### Accessing Action.IO for Mac preferences on Mac OS X

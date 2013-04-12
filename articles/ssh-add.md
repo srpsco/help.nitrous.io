@@ -1,3 +1,12 @@
+---
+title: Adding SSH Keys (mac)
+published: true
+tags:
+- ssh
+- mac
+- public-keys
+---
+
 SSH Keys enable you to manage your Action boxes directly from your computer.  The keypair is used to identify you when interacting with your box from outside of the website.
 
 <ul class="inline choices">

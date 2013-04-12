@@ -1,3 +1,10 @@
+---
+title: Creating a new file
+published: true
+tags:
+- web-ide
+---
+
 #  Creating a new file
 
 To create a new file, simply click the "+" icon to the right of the tabs in the editor portion of the Web IDE.

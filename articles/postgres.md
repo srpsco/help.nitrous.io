@@ -1,3 +1,13 @@
+---
+title: Create an account
+published: true
+tags:
+- integration
+- databases
+- heroku
+- postgres
+---
+
 This guide walks through how you can setup a Heroku Postgres database
 on your Action.IO box.
 
@@ -75,7 +85,7 @@ following:
     ENV['TODO_APP_DEV_DATABASE']
 
 (Please note, you'll probably need to install the
-[pg](http://rubygems.org/gems/pg) Rubygem 
+[pg](http://rubygems.org/gems/pg) Rubygem
 before you use Postgres in a Rails app, using the following command:
 
     gem install pg
@@ -100,7 +110,7 @@ In Node.JS, you can access each of the environment variables by using:
     process.env.TODO_APP_DEV_DATABASE
 
 (Please note, you'll probably need to install the
-[pg](https://npmjs.org/package/pg) NPM 
+[pg](https://npmjs.org/package/pg) NPM
 before you use Postgres in a Node.JS app, using the following command:
 
     npm install -g pg

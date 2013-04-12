@@ -1,3 +1,11 @@
+---
+title: Upload a directory via the Web IDE
+published: true
+tags:
+- faq
+- web-ide
+---
+
 The [File Upload](http://help.action.io/customer/portal/articles/963163-file-uploads) feature on the Web IDE is intended for individual files.
 
 If you need to upload an entire directory, we suggest using either SFTP or Git. Another option you have, is to zip your application into an archive and then upload the zipped archive via the Web IDE upload.

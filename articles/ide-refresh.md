@@ -1,3 +1,11 @@
+---
+title: Refresh file tree in the web IDE
+published: true
+tags:
+- faq
+- web-ide
+---
+
 *Help! My file browser is not loading the directory tree in my project!*
 
 When you launch the Web IDE, if you cannot find any of the folders in your project in the file browser, just click the refresh button at the top of the file browser.

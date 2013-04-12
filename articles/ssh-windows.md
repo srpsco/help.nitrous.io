@@ -1,3 +1,12 @@
+---
+title: Add SSH keys (windows)
+published: true
+tags:
+- ssh
+- public-keys
+- windows
+---
+
 SSH Keys enable you to manage your Action boxes directly from your computer via your favorite SSH client.  The keypair is used to identify you when interacting with your box from outside of [our website](https://action.io).
 
 <ul class="inline choices">

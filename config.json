@@ -1,14 +1,15 @@
 {
-	"template_dir": "templates", 
+	"template_dir": "templates",
 	"content_dir": "articles",
 	"output_dir": "output",
 
-	"server": { 
+	"server": {
 		"port": 9009
 	},
 
 	"plugins": {
-		"content_handler": "punch-blog-content-handler"
+		"content_handler": "punch-blog-content-handler",
+    ".css": "punch-sass-compiler"
 	},
 
   "blog": {
@@ -23,9 +24,9 @@
 
 	"bundles": {
 		"/css/all.css": [
-			"/css/normalize.css",	
+			"/css/normalize.css",
 			"/css/main.css",
 			"/css/site.less"
-		]	
+		]
 	}
 }

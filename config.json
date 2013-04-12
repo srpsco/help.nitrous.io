@@ -8,7 +8,17 @@
 	},
 
 	"plugins": {
-		"content_handler": "punch-simple-markdown-content-handler"
+		"content_handler": "punch-blog-content-handler"
+	},
+
+  "blog": {
+    "posts_dir": "articles",
+    "post_format": "md",
+    "post_url": "/{title}",
+    "archive_urls": {
+      "all": "/archive",
+      "tag": "categories/{tag}"
+    }
 	},
 
 	"bundles": {

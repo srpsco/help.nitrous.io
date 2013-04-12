@@ -1,9 +1,13 @@
 {{> header }}
 
-		<div role="main">
-			<h2>{{title}}</h2>
-			{{{content}}}
-		</div>
+		{{#is_post}}
+			{{> post}}
+		{{/is_post}}
+		
+		{{^is_post}}
+			{{> archive}}
+		{{/is_post}}
+
 
 {{> footer }}
 

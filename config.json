@@ -17,7 +17,7 @@
     "post_url": "/{title}",
     "archive_urls": {
       "all": "/archive",
-      "tag": "categories/{tag}"
+      "tag": "/categories/{tag}"
     }
 	},
 

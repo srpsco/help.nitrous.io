@@ -1,12 +1,11 @@
 <div id="main-content" class="expanded">
-    <h2>{{title}}</h2>
+    <h2>{{#titleize}}{{section}}{{/titleize}}</h2>
 
 		<div class="posts" role="archive">
 			<ul>
 				{{#posts}}
 				<li>
 					<a href="{{ permalink }}">{{{ title }}}</a>
-					<time class="updated" datetime="{{ published_date }}" pubdate>{{#long_date}}{{published_date}}{{/long_date}}</time>
 				</li>
 				{{/posts}}
 			</ul>

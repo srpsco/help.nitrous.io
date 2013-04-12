@@ -5,8 +5,6 @@ tags:
 - web-ide
 ---
 
-#  Creating a new file
-
 To create a new file, simply click the "+" icon to the right of the tabs in the editor portion of the Web IDE.
 
 ![New File Button](https://raw.github.com/action-io/action-assets/master/support/screenshots/new-file.png)

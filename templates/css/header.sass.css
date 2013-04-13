@@ -1,0 +1,23 @@
+#topnav
+  float: right
+  list-style: none
+  li
+    margin-right: 36px
+    float: left
+    font-size: 16px
+    line-height: 56px
+    &last-child
+      margin-right: 0
+
+    a
+      color: #777
+      font-weight: bold
+      &:hover
+        color: #333
+        text-decoration: none
+      &.login
+        background: #f0f0f0
+        border: 1px solid #ddd
+        color: #333
+        font-size: 14px
+        padding: 8px 12px

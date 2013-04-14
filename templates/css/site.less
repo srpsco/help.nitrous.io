@@ -18,8 +18,33 @@ div[role=main] {
 }
 
 footer {
-	text-align: center;
-	font-size: 0.75em;
+	padding: 24px 0;
+	border-top: 2px solid #ddd;
+	font-size: 14px;
+	ul {
+		list-style: none;
+		margin: 0 0 24px;
+		padding: 0;
+		&.social {
+			float: right;
+		}
+
+		li {
+			float: left;
+			margin-right: 16px;
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				color: #aaa;
+				text-decoration: none;
+				&:hover {
+					color: #222;
+				}
+			}
+		}
+	}
 }
 
 h1 {

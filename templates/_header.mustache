@@ -26,10 +26,19 @@
 
 		<div class="mast" id="search">
 			<div class="mast-container">
-				<form id="site-search">
-					<input type="text" placeholder="Have a question? Ask or enter a search term here." />
-					<input type="submit" value="Search" />
-				</form>
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
 			</div>
 		</div>
 

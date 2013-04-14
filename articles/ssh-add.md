@@ -11,7 +11,7 @@ SSH Keys enable you to manage your Action boxes directly from your computer.  Th
 
 <ul class="inline choices">
   <li class="selected">Mac</li>
-  <li><a href="http://help.action.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-">Windows</a></li>
+  <li><a href="http://help.nitrous.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-">Windows</a></li>
 </ul>
 
 ### 1: Generate a public key
@@ -35,7 +35,7 @@ Now you enter a passphrase (passphrases make things more secure).
     # The key fingerprint is:
     # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@youremail.com
 
-### 2: Adding keys to Action.IO
+### 2: Adding keys to Nitrous.IO
 
 Run the following code to copy the key to your clipboard.
 
@@ -48,7 +48,7 @@ If you don't have the pbcopy command, copy the output of the following command:
 
     cat ~/.ssh/id_rsa.pub
 
-Next, Login to your Action.IO account and click "Public Keys" in the top right navigation.  You shouldn't have any keys listed if this is the first key you are adding. Click the "Add Public key" button:
+Next, Login to your Nitrous.IO account and click "Public Keys" in the top right navigation.  You shouldn't have any keys listed if this is the first key you are adding. Click the "Add Public key" button:
 
 ![Public Key Button](https://raw.github.com/action-io/action-assets/master/support/screenshots/add-public-key-button.png)
 
@@ -81,6 +81,6 @@ In your terminal, you might see something like this:
 Don't worry, this is supposed to happen. Verify that the fingerprint matches the one here and type "yes". This will add your Action box to your known_hosts ssh file.
 
     Warning: Permanently added '[apse1.actionbox.io]:10253, [54.251.42.128]:10253' (RSA) to the list of known hosts.
-    Welcome to Action.IO (GNU/Linux 3.2.0-31-virtual x86_64)
+    Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)
 
 Now you've got your SSH keys setup so you can connect via Terminal / PuTTY and use Vim or Emacs to code!

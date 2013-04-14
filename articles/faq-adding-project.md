@@ -6,7 +6,7 @@ tags:
 - getting-started
 ---
 
-We get a lot of emails asking how to upload applications to an Action.IO box. There are a few ways you can do this:
+We get a lot of emails asking how to upload applications to an Nitrous.IO box. There are a few ways you can do this:
 
 * [SFTP](#sftp)
 * [Git](#git)
@@ -14,7 +14,7 @@ We get a lot of emails asking how to upload applications to an Action.IO box. Th
 <a href="#" id="sftp"></a>
 ### Uploading your project via SFTP
 
-Uploading via SFTP requires that you have set up your public / private keypair on your machine and added your public key to Action.IO. To do this, we recommend that you use PuttyGen. Visit this link and look for the PuttyGen download:
+Uploading via SFTP requires that you have set up your public / private keypair on your machine and added your public key to Nitrous.IO. To do this, we recommend that you use PuttyGen. Visit this link and look for the PuttyGen download:
 
 [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
 
@@ -40,9 +40,9 @@ Name the public key something like **public_key.pub** and the private key **priv
 
 <p class="note">You want to save these keys someplace safe because if someone were to find your private key, they could authenticate with any services where you utilize public key authentication.</p>
 
-Okay, so now we have our keypairs set up, let's go ahead and add our public keys to Action.IO.
+Okay, so now we have our keypairs set up, let's go ahead and add our public keys to Nitrous.IO.
 
-1. Signin to your [Action.IO](https://action.io) account
+1. Signin to your [Nitrous.IO](https://nitrous.io) account
 2. Click the "Public Keys" link in the top navigation
 3. Create a name for your public key -- something that identifies the machine. I'll use "AJ's Windows XP".
 4. Paste your public key in the text area.
@@ -69,7 +69,7 @@ Then we'll want to add the private key that we just created and put in our safe 
 
 Then click the **OK** button.
 
-### Setup site profile to connect to Action.IO
+### Setup site profile to connect to Nitrous.IO
 
 Ok, now that we've added the key to Filezilla, lets go ahead and add the connection details.
 
@@ -77,11 +77,11 @@ Ok, now that we've added the key to Filezilla, lets go ahead and add the connect
 
 ![filezilla site manager](https://raw.github.com/action-io/action-assets/master/support/screenshots/sftp/filezilla-sitemanager.png)
 
-#### 2. Click the **New Site** button and name the connection profile. I'm going to name it the same as my box on Action.IO
+#### 2. Click the **New Site** button and name the connection profile. I'm going to name it the same as my box on Nitrous.IO
 
 ![filezilla new site](https://raw.github.com/action-io/action-assets/master/support/screenshots/sftp/filezilla-newsite.png)
 
-#### 3. Type in **action** as the username and the relevant **host** and **port** information from your box details page on Action.IO:
+#### 3. Type in **action** as the username and the relevant **host** and **port** information from your box details page on Nitrous.IO:
 
 ![filezilla box details](https://raw.github.com/action-io/action-assets/master/support/screenshots/sftp/box-details.png)
 
@@ -103,20 +103,20 @@ You'll see the connection details streaming in the filezilla status menu and the
 <a href="#" id="git"></a>
 ### Uploading your project via Git
 
-If you have git installed on your machine, you can easily push a code repository to github (or another repository hosting service), then clone the repository on your Action.IO box.
+If you have git installed on your machine, you can easily push a code repository to github (or another repository hosting service), then clone the repository on your Nitrous.IO box.
 
 Prerequisites:
 
 * Installed [Git](http://git-scm.com/)
 * Working knowledge of [Git commands](http://try.github.com/levels/1/challenges/1)
 
-Read this article about how to connect your github account to Action.IO:
+Read this article about how to connect your github account to Nitrous.IO:
 
 **Mac:**
-[http://help.action.io/customer/portal/articles/853510-adding-ssh-keys-to-github](http://help.action.io/customer/portal/articles/853510-adding-ssh-keys-to-github)
+[http://help.nitrous.io/customer/portal/articles/853510-adding-ssh-keys-to-github](http://help.nitrous.io/customer/portal/articles/853510-adding-ssh-keys-to-github)
 
 **Windows:**
-[http://help.action.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-](http://help.action.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-)
+[http://help.nitrous.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-](http://help.nitrous.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-)
 
-Once you've successfully setup your SSH keys, you can easily clone repositories from Github to your Action.IO boxes.
+Once you've successfully setup your SSH keys, you can easily clone repositories from Github to your Nitrous.IO boxes.
 

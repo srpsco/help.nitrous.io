@@ -8,7 +8,7 @@ tags:
 ---
 
 This guide walks through how you can setup a MongoDB database
-on your Action.IO box.
+on your Nitrous.IO box.
 
 In: [MongoLab](https://mongolab.com)
 
@@ -27,7 +27,7 @@ now we'll just pick the **Free (0.5GB)** plan.
 
 Pick your Cloud Provider to be **Amazon Web Services** and choose either
 the **EU-West-1 (Ireland)** or **US-East-1 (Virginia)** - whichever is
-geographically close to the Action.IO box that you created.
+geographically close to the Nitrous.IO box that you created.
 
 Pick a name for your database, say **my-awesome-apps-mongodb** as well as
 a username and password (which you will use later to connect to your
@@ -54,7 +54,7 @@ is the port, **my-awesome-apps-mongodb** is the database name, **dbuser**, **dbp
 is the username/password combination that you set earlier.
 
 Grab each of the values and assign them to environment variables in your
-**~/.bash_profile** file on your Action.IO box. It is good practice to
+**~/.bash_profile** file on your Nitrous.IO box. It is good practice to
 namespace your environment variables variables with the environment that you want to use your database in
 (development or test), like so:
 
@@ -64,7 +64,7 @@ namespace your environment variables variables with the environment that you wan
 format, so "MONGODB_DEVELOPMENT_URI" is also included as part of your
 environment variables).
 
-This will ensure that every time you log into your Action.IO box, your
+This will ensure that every time you log into your Nitrous.IO box, your
 database credentials will be available as environment variables to use
 in any of your apps.
 
@@ -81,7 +81,7 @@ This should return **ds043447.mongolab.com**
 
 ### Connecting with the Official MongoDB Client
 
-All Action.IO boxes come bundled with the official "mongo" client which
+All Nitrous.IO boxes come bundled with the official "mongo" client which
 can be used to connect to the database. You can connect to the MongoLab
 MongoDB database that you just created, by using the command
 

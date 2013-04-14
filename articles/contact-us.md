@@ -8,7 +8,7 @@ tags:
 
 If you'd like to get in touch:
 
-Support inquiries: [support@action.io](mailto:support@action.io)
+Support inquiries: [support@nitrous.io](mailto:support@nitrous.io)
 
 By mail:
 

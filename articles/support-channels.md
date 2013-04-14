@@ -6,18 +6,18 @@ tags:
 - help
 ---
 
-We provide a number of ways to get in touch with someone on the Action.IO team.  If you can't find a live person in one of these channels, try another one! Our team is distributed around the globe, so odds are we're awake somewhere.  And in the rare case you can't find *anybody* you can always just [send us an email](mailto: support@action.io) and we'll do our best to respond within 24 hrs.
+We provide a number of ways to get in touch with someone on the Nitrous.IO team.  If you can't find a live person in one of these channels, try another one! Our team is distributed around the globe, so odds are we're awake somewhere.  And in the rare case you can't find *anybody* you can always just [send us an email](mailto: support@nitrous.io) and we'll do our best to respond within 24 hrs.
 
-### Action.IO Community Q&A
+### Nitrous.IO Community Q&A
 
-We encourage you to utilize the amazing [Stack Overflow](http://stackoverflow.com/) community for answers to many Action.IO questions.  We also do our best to respond to any Q&A on our help forums within 2-3 days.
+We encourage you to utilize the amazing [Stack Overflow](http://stackoverflow.com/) community for answers to many Nitrous.IO questions.  We also do our best to respond to any Q&A on our help forums within 2-3 days.
 
-If you have an urgent question about stability or performance of your development box, please [send us an email](mailto: support@action.io).
+If you have an urgent question about stability or performance of your development box, please [send us an email](mailto: support@nitrous.io).
 
 
 ### Chat Room
 
-We have a [public campfire chatroom](https://www.action.io/chat) where many of the Action.IO employees hang out. Our team is spread out around the world, so odds are there will be somebody here to answer your question. Please don't troll the forums, that's just not cool bro.
+We have a [public campfire chatroom](https://www.nitrous.io/chat) where many of the Nitrous.IO employees hang out. Our team is spread out around the world, so odds are there will be somebody here to answer your question. Please don't troll the forums, that's just not cool bro.
 
 ### Live 1-on-1 Chat
 

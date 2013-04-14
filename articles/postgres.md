@@ -9,7 +9,7 @@ tags:
 ---
 
 This guide walks through how you can setup a Heroku Postgres database
-on your Action.IO box.
+on your Nitrous.IO box.
 
 ### Create a Database on Heroku Postgres
 
@@ -56,7 +56,7 @@ password).
 ![Heroku Settings](https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/heroku-settings.png)
 
 Grab each of the values and assign them to environment variables in your
-"~/.bashrc" file on your Action.IO box. This will ensure that every time you log into your Action.IO box, your
+"~/.bashrc" file on your Nitrous.IO box. This will ensure that every time you log into your Nitrous.IO box, your
 database credentials will be available as environment variables to use
 in any of your apps. It is good practice to namespace your environment
 variables with the environment that you want to use your database in
@@ -96,8 +96,8 @@ created.
 
 ![Rails Postgres Settings](https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/database-ruby.png)
 
-A more detailed tutorial is present on the [Action.IO
-blog](http://blog.action.io/2013/02/11/postgres-action-io-3.html)
+A more detailed tutorial is present on the [Nitrous.IO
+blog](http://blog.nitrous.io/2013/02/11/postgres-action-io-3.html)
 
 #### Node.JS
 

@@ -14,4 +14,4 @@ When you launch the Web IDE, if you cannot find any of the folders in your proje
 
 If you still cannot see any of the files in your file browser, try refreshing the page using your browser. Make sure you've saved any open files!!!
 
-If it's *still* not working, send us an email at [help@action.io]("mailto:help@action.io?subject=file%20browser")
+If it's *still* not working, send us an email at [help@nitrous.io]("mailto:help@nitrous.io?subject=file%20browser")

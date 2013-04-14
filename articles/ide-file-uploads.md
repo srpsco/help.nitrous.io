@@ -6,7 +6,7 @@ tags:
 - file-uploads
 ---
 
-Uploading files to Action.IO is quick and easy. There's no need to FTP or SCP files to your development box (although you can, if you want to).
+Uploading files to Nitrous.IO is quick and easy. There's no need to FTP or SCP files to your development box (although you can, if you want to).
 
 <p class="alert">This article describes how to upload individual files. If you need to upload an entire project / complex directory structure, please read [this article]()</p>
 
@@ -28,7 +28,7 @@ You'll see the status of each file uploaded via the progress bar to the right of
   We support .png, .jpeg, .gif, and .pdf file uploads
 </div>
 
-After each file is uploaded successfully, the modal will disapear and you'll be back in the Action.IO IDE. The file browser should refresh automatically and you should see your uploaded files in the correct directory.
+After each file is uploaded successfully, the modal will disapear and you'll be back in the Nitrous.IO IDE. The file browser should refresh automatically and you should see your uploaded files in the correct directory.
 
 ![File Directory](https://raw.github.com/action-io/action-assets/master/support/screenshots/file-uploads-4.png)
 
@@ -38,4 +38,4 @@ If you want to view an image in the browser, simply click the image to open a pr
 
 ![Airmax](https://raw.github.com/action-io/action-assets/master/support/screenshots/airmaxpair.png)
 
-That's it!  Of course, if you're having any trouble, you can always [get in touch with a human](mailto: support@action.io?subject=File%20Uploads).
+That's it!  Of course, if you're having any trouble, you can always [get in touch with a human](mailto: support@nitrous.io?subject=File%20Uploads).

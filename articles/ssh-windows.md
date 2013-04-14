@@ -7,10 +7,10 @@ tags:
 - windows
 ---
 
-SSH Keys enable you to manage your Action boxes directly from your computer via your favorite SSH client.  The keypair is used to identify you when interacting with your box from outside of [our website](https://action.io).
+SSH Keys enable you to manage your Action boxes directly from your computer via your favorite SSH client.  The keypair is used to identify you when interacting with your box from outside of [our website](https://www.nitrous.io).
 
 <ul class="inline choices">
-  <li><a href="http://help.action.io/customer/portal/articles/802633-add-ssh-keys-to-action-io">Mac</a></li>
+  <li><a href="http://help.nitrous.io/customer/portal/articles/802633-add-ssh-keys-to-action-io">Mac</a></li>
   <li class="selected">Windows</li>
 </ul>
 
@@ -40,9 +40,9 @@ Name the public key something like **public_key.pub** and the private key **priv
 
 <p class="note">You want to save these keys someplace safe because if someone were to find your private key, they could authenticate with any services where you utilize public key authentication.</p>
 
-Okay, so now we have our keypairs set up, let's go ahead and add our public keys to Action.IO.
+Okay, so now we have our keypairs set up, let's go ahead and add our public keys to Nitrous.IO.
 
-1. Signin to your [Action.IO](https://action.io) account
+1. Signin to your [Nitrous.IO](https://www.nitrous.io) account
 2. Click the "Public Keys" link in the top navigation
 3. Create a name for your public key -- something that identifies the machine. I'll use "AJ's Windows XP".
 4. Paste your public key in the text area and click **Add Key**.
@@ -63,13 +63,13 @@ Now we're going to tell PuTTY where to find our private key. Click on the **Brow
 
 Select your private key, and click **Open**
 
-Back on the PuTTY pane, click **Session** at the top. You'll see all of the required connection information. You'll need to type in your hostname, port, and make sure the connection type is set to SSH. You can find the hostname and port information on the [Action.IO](https://action.io/boxes) website in the box details pane.
+Back on the PuTTY pane, click **Session** at the top. You'll see all of the required connection information. You'll need to type in your hostname, port, and make sure the connection type is set to SSH. You can find the hostname and port information on the [Nitrous.IO](https://www.nitrous.io/boxes) website in the box details pane.
 
 Your hostname will be something like:  **apse1.actionbox.io** and your port will be at the end of the string after the colon:
 
 ![box details](https://raw.github.com/action-io/action-assets/master/support/screenshots/sftp/box-details.png)
 
-You'll probably want to enter a name into the input under the **Saved Sessions** label. Since the box I'm connecting to is called Bonzai on Action.IO, I'm going to call this session "Bonzai" and click Save to save the session to my list of saved profiles.
+You'll probably want to enter a name into the input under the **Saved Sessions** label. Since the box I'm connecting to is called Bonzai on Nitrous.IO, I'm going to call this session "Bonzai" and click Save to save the session to my list of saved profiles.
 
 Now, let's try out the connection. With our Bonzai profile loaded, click the **Open** link at the bottom of the window. An SSH terminal should appear. When it asks you who to login as, just type "action". This is the common user for free boxes.
 
@@ -83,4 +83,4 @@ And we'll see that we're successfully connected to our box!
 
 ![connected](https://raw.github.com/action-io/action-assets/master/support/screenshots/putty/putty-term.png)
 
-Of course, if you're having trouble, you can always [talk to a real human](mailto: support@action.io?subject=SSH%20Key%20Issues%20Windows).
+Of course, if you're having trouble, you can always [talk to a real human](mailto: support@nitrous.io?subject=SSH%20Key%20Issues%20Windows).

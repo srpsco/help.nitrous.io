@@ -25,4 +25,4 @@ Or if you're not using the Web IDE, you can find it in your Box details:
 
 ![Preview URL](https://raw.github.com/action-io/action-assets/master/support/screenshots/box-preview-url.png)
 
-Of course, if you're having trouble, you can always [talk to a real human](mailto: support@action.io?subject=Node%20Server%20Issues).
+Of course, if you're having trouble, you can always [talk to a real human](mailto: support@nitrous.io?subject=Node%20Server%20Issues).

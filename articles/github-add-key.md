@@ -23,11 +23,11 @@ On the Account Settings page, click the "Connect to Github" button.
 
 You'll be redirected to the Github authentication page, where you can review the policies and select "Allow".
 
-You will then be redirected back to Action.IO and you should see a message that you've authenticated successfully. If you're having trouble, send us an email.
+You will then be redirected back to Nitrous.IO and you should see a message that you've authenticated successfully. If you're having trouble, send us an email.
 
 ### 2. Add Box SSH Key to Github
 
-Now that you've successfully authenticated your Github account, you'll be able to add your SSH keys from your Action.IO to your Github account.  This will allow you to easily work with your repositories on Github.
+Now that you've successfully authenticated your Github account, you'll be able to add your SSH keys from your Nitrous.IO to your Github account.  This will allow you to easily work with your repositories on Github.
 
 Navigate back to the Boxes page, by clicking the "Boxes" link in the top navigation.
 
@@ -45,6 +45,6 @@ If you want to confirm that your SSH key from your action box has been added to 
 
 _Account Settings >> SSH Keys_
 
-You should see the key you added via Action.IO.
+You should see the key you added via Nitrous.IO.
 
 ![Action Box Key](https://raw.github.com/action-io/action-assets/master/support/screenshots/github-action-key.png)

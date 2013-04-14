@@ -16,4 +16,4 @@ We recommend that you use a modern web browser that support [websockets](http://
 
 ### Will the site work in Internet Explorer?
 
-Action.IO should function in Internet Explorer 10+, however we suggest that you use one of the recommended browsers listed above if possible.
+Nitrous.IO should function in Internet Explorer 10+, however we suggest that you use one of the recommended browsers listed above if possible.

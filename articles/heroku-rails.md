@@ -10,19 +10,19 @@ These instructions will help you deploy your [Rails 3.2](http://guides.rubyonrai
 
 ### Things you should know
 
-* Ruby/Rails basic concepts. Your Action.IO box will come preinstalled with Rails 3.2 and Ruby 1.9.2.
+* Ruby/Rails basic concepts. Your Nitrous.IO box will come preinstalled with Rails 3.2 and Ruby 1.9.2.
 * Basic knowledge of Rubygems, [Bundler](http://gembundler.com/).
 * Basic knowledge of [Git](http://git-scm.com/).
 
 ### Prerequisites
 
-* An [Action.IO Account](https://www.action.io)
+* An [Nitrous.IO Account](https://www.nitrous.io)
 * A [Heroku Account](https://www.heroku.com)
-* A [Ruby on Rails box](http://help.action.io/customer/portal/articles/802603-create-a-box) on Action.IO
+* A [Ruby on Rails box](http://help.nitrous.io/customer/portal/articles/802603-create-a-box) on Nitrous.IO
 
 ### Authenticate your Heroku Account
 
-All boxes on Action.IO come pre-installed with the [Heroku Toolbelt](https://toolbelt.heroku.com/). So let's go ahead and login to your Heroku Account:
+All boxes on Nitrous.IO come pre-installed with the [Heroku Toolbelt](https://toolbelt.heroku.com/). So let's go ahead and login to your Heroku Account:
 
     $ heroku login
     Enter your Heroku credentials.
@@ -31,20 +31,20 @@ All boxes on Action.IO come pre-installed with the [Heroku Toolbelt](https://too
 
 <p class="alert">If you aren't prompted to upload your SSH key or you decide not to upload it now, you'll need to upload it manually.</p>
 
-Since we already generate your public SSH keys on your Action.IO box, you just need to run:
+Since we already generate your public SSH keys on your Nitrous.IO box, you just need to run:
 
     $ heroku keys:add ~/.ssh/id_rsa.pub
 
 ### Create an application
 
-If you're importing an existing application, you can [connect your Github account](http://help.action.io/customer/portal/articles/853510-adding-ssh-keys-to-github) to easily clone projects. For this example, let's create a simple hello application:
+If you're importing an existing application, you can [connect your Github account](http://help.nitrous.io/customer/portal/articles/853510-adding-ssh-keys-to-github) to easily clone projects. For this example, let's create a simple hello application:
 
     $ rails new hello-app --database=postgresql
     $ cd hello-app
 
 **Database Support**
 
-Action.IO boxes come with Sqlite3 support by default. However, for more complex applications, you might want to use Postgres, MySQL, MongoDB, etc…
+Nitrous.IO boxes come with Sqlite3 support by default. However, for more complex applications, you might want to use Postgres, MySQL, MongoDB, etc…
 
 <p class="note">Heroku highly recommends using PostgreSQL during development to maintain parity between development and production environments.</p>
 
@@ -54,7 +54,7 @@ Appending the **--database** flag when creating the app will create the appropri
 
 Next, we need to create a development database on [Heroku Postgres](https://postgres.heroku.com). This way you don't need to install Postgres and worry about any issues between your development database and production database. Follow the steps from this article:
 
-[http://help.action.io/customer/portal/articles/991662-heroku-postgres-integration](http://help.action.io/customer/portal/articles/991662-heroku-postgres-integration)
+[http://help.nitrous.io/customer/portal/articles/991662-heroku-postgres-integration](http://help.nitrous.io/customer/portal/articles/991662-heroku-postgres-integration)
 
 ### Setup Git
 

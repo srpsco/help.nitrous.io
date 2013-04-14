@@ -6,7 +6,7 @@ tags:
 - web-ide
 ---
 
-The [File Upload](http://help.action.io/customer/portal/articles/963163-file-uploads) feature on the Web IDE is intended for individual files.
+The [File Upload](http://help.nitrous.io/customer/portal/articles/963163-file-uploads) feature on the Web IDE is intended for individual files.
 
 If you need to upload an entire directory, we suggest using either SFTP or Git. Another option you have, is to zip your application into an archive and then upload the zipped archive via the Web IDE upload.
 
@@ -14,7 +14,7 @@ First, zip up your project using your favorite archving application. On later ve
 
 ![Compress](https://raw.github.com/action-io/action-assets/master/support/screenshots/compress-menu.png)
 
-Then, open up the IDE in your box on Action.IO and below the file browser, click the "Upload Files" button.
+Then, open up the IDE in your box on Nitrous.IO and below the file browser, click the "Upload Files" button.
 
 ![IDE Upload](https://raw.github.com/action-io/action-assets/master/support/screenshots/ide-upload.png)
 

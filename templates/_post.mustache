@@ -1,5 +1,15 @@
 <div id="main-content">
 	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<span role="icon" aria-hidden="true" class="icon-tag"></span><h4>Categories:</h4></span>
+				{{#tags}}
+					<a href="/categories/{{#downcase}}{{.}}{{/downcase}}">{{.}}</a>&nbsp;
+				{{/tags}}
+			</div>
+		</aside>
+
 		<h2 class="entry-title">{{{ title }}}</h2>
 		<div>Last Updated: <time class="updated" datetime="{{ published_date }}" pubdate>{{published_date}}</time></div>
 
@@ -7,12 +17,5 @@
 			{{{content}}}
 		</div>
 
-		<aside role="meta">
-			<div role="tags">
-				<span role="icon" aria-hidden="true" class="icon-tag"></span><span>Tags:</span></span>
-				{{#tags}}
-					<a href="/categories/{{#downcase}}{{.}}{{/downcase}}">{{.}}</a>&nbsp;
-				{{/tags}}
-			</div>
 	</article>
 </div>

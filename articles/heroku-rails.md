@@ -18,7 +18,7 @@ These instructions will help you deploy your [Rails 3.2](http://guides.rubyonrai
 
 * An [Nitrous.IO Account](https://www.nitrous.io)
 * A [Heroku Account](https://www.heroku.com)
-* A [Ruby on Rails box](http://help.nitrous.io/customer/portal/articles/802603-create-a-box) on Nitrous.IO
+* A [Ruby on Rails box](/box-new) on Nitrous.IO
 
 ### Authenticate your Heroku Account
 
@@ -37,7 +37,7 @@ Since we already generate your public SSH keys on your Nitrous.IO box, you just 
 
 ### Create an application
 
-If you're importing an existing application, you can [connect your Github account](http://help.nitrous.io/customer/portal/articles/853510-adding-ssh-keys-to-github) to easily clone projects. For this example, let's create a simple hello application:
+If you're importing an existing application, you can [connect your Github account](/github-add-key) to easily clone projects. For this example, let's create a simple hello application:
 
     $ rails new hello-app --database=postgresql
     $ cd hello-app
@@ -52,9 +52,7 @@ Since we're deploying the application to Heroku, let's use Postgres.
 
 Appending the **--database** flag when creating the app will create the appropriate postgres variables in database.yml and will include the pg gem in your Gemfile.
 
-Next, we need to create a development database on [Heroku Postgres](https://postgres.heroku.com). This way you don't need to install Postgres and worry about any issues between your development database and production database. Follow the steps from this article:
-
-[http://help.nitrous.io/customer/portal/articles/991662-heroku-postgres-integration](http://help.nitrous.io/customer/portal/articles/991662-heroku-postgres-integration)
+Next, we need to create a development database on [Heroku Postgres](https://postgres.heroku.com). This way you don't need to install Postgres and worry about any issues between your development database and production database. Follow the steps from [this article](/postgres).
 
 ### Setup Git
 

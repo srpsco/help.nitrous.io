@@ -10,7 +10,7 @@ tags:
 SSH Keys enable you to manage your Action boxes directly from your computer via your favorite SSH client.  The keypair is used to identify you when interacting with your box from outside of [our website](https://www.nitrous.io).
 
 <ul class="inline choices">
-  <li><a href="http://help.nitrous.io/customer/portal/articles/802633-add-ssh-keys-to-action-io">Mac</a></li>
+  <li><a href="/ssh-add">Mac</a></li>
   <li class="selected">Windows</li>
 </ul>
 
@@ -83,4 +83,4 @@ And we'll see that we're successfully connected to our box!
 
 ![connected](https://raw.github.com/action-io/action-assets/master/support/screenshots/putty/putty-term.png)
 
-Of course, if you're having trouble, you can always [talk to a real human](mailto: support@nitrous.io?subject=SSH%20Key%20Issues%20Windows).
+Of course, if you're having trouble, you can always [talk to a real human](mailto:support@nitrous.io?subject=SSH%20Key%20Issues%20Windows).

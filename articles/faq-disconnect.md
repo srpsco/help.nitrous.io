@@ -8,7 +8,7 @@ tags:
 
 If you're running a server or long-running process that you don't want to interrupt when you mistakenly close your browser window, we suggest using a terminal multiplexer like [screen](http://www.gnu.org/software/screen/) or [tmux](http://tmux.sourceforge.net/) and creating a persistent session to which you can reconnect.
 
-We pre-install tmux on all boxes, so you're ready to go out of the gate. You can access tmux via the terminal in [the Web IDE](http://help.nitrous.io/customer/portal/articles/802610-action-web-ide#console) or by [SSHing into your box](http://help.nitrous.io/customer/portal/articles/802633-add-ssh-keys-to-action-io).
+We pre-install tmux on all boxes, so you're ready to go out of the gate. You can access tmux via the terminal in [the Web IDE](ide-general#console) or by [SSHing into your box](/categories/ssh).
 
 ### Getting started with tmux
 

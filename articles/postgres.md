@@ -1,8 +1,8 @@
 ---
-title: Create an account
+title: Create a postgres development database
 published: true
 tags:
-- integration
+- integrations
 - databases
 - heroku
 - postgres

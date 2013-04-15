@@ -15,13 +15,13 @@ If you don't already have an account, [sign up for an invite](https://www.nitrou
 
 If you don't already have a box created, you'll need to create one on a platform that runs on Heroku.  Luckily, Heroku supports most environments.
 
-You can read about [creating development boxes here](http://help.nitrous.io/customer/portal/articles/802603-create-a-box)
+You can read about [creating development boxes here](/box-new)
 
 ![New Box Button](https://raw.github.com/action-io/action-assets/master/support/screenshots/new-box-button.png)
 
 ### 3. Connect your Box to Github
 
-If you haven't already connected to Github, [Generate a public key for your newly created development box and add it to Github](http://help.nitrous.io/customer/portal/articles/853510-adding-ssh-keys-to-github)
+If you haven't already connected to Github, [Generate a public key for your newly created development box and add it to Github](/github-add-key)
 
 ![Reveal Public Key](https://raw.github.com/action-io/action-assets/master/support/screenshots/reveal-public-key.png)
 
@@ -59,4 +59,4 @@ Since we've authenticated with Github, lets clone a git project that we'll be de
 
 And that's it!  Your development box will now be connected to your Heroku account and you can deploy as you would on your local machine.
 
-Of course, if you're having trouble, you can always [talk to a real human](mailto: support@nitrous.io?subject=Heroku%20Authenticaion%20Issues).
+Of course, if you're having trouble, you can always [talk to a real human](mailto:support@nitrous.io?subject=Heroku%20Authenticaion%20Issues).

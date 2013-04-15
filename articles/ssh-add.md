@@ -11,7 +11,7 @@ SSH Keys enable you to manage your Action boxes directly from your computer.  Th
 
 <ul class="inline choices">
   <li class="selected">Mac</li>
-  <li><a href="http://help.nitrous.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-">Windows</a></li>
+  <li><a href="/ssh-windows">Windows</a></li>
 </ul>
 
 ### 1: Generate a public key

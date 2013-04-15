@@ -113,10 +113,10 @@ Prerequisites:
 Read this article about how to connect your github account to Nitrous.IO:
 
 **Mac:**
-[http://help.nitrous.io/customer/portal/articles/853510-adding-ssh-keys-to-github](http://help.nitrous.io/customer/portal/articles/853510-adding-ssh-keys-to-github)
+[Adding your keys to Github](/github-add-key)
 
 **Windows:**
-[http://help.nitrous.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-](http://help.nitrous.io/customer/portal/articles/1034948-add-ssh-keys-to-action-io-windows-xp-)
+[Adding SSH Keys on Windows](/ssh-windows)
 
 Once you've successfully setup your SSH keys, you can easily clone repositories from Github to your Nitrous.IO boxes.
 

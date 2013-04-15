@@ -38,4 +38,4 @@ If you want to view an image in the browser, simply click the image to open a pr
 
 ![Airmax](https://raw.github.com/action-io/action-assets/master/support/screenshots/airmaxpair.png)
 
-That's it!  Of course, if you're having any trouble, you can always [get in touch with a human](mailto: support@nitrous.io?subject=File%20Uploads).
+That's it!  Of course, if you're having any trouble, you can always [get in touch with a human](mailto:support@nitrous.io?subject=File%20Uploads).

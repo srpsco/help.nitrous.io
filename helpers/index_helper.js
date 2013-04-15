@@ -31,7 +31,15 @@ var fetch_categories = function(callback) {
       });
 
       _.each(direct_categories_obj, function(posts, category) {
-        categories_list.push({ name: category, posts: posts.slice(0, 5) });
+        var has_more = false;
+        var posts_to_show = posts;
+
+        if (posts.length > 5) {
+          posts_to_show = posts.slice(0, 5);
+          has_more = true;
+        }
+
+        categories_list.push({ "name": category, "posts": posts_to_show, "has_more": has_more });
       });
 
       return callback();
@@ -54,11 +62,11 @@ module.exports = {
 
 	},
 
-	directAccess: function(){
+	directAccess: function() {
 		return { "block_helpers": {}, "tag_helpers": {}, "options": {} };
 	},
 
-	get: function(basepath, file_extension, options, callback){
+	get: function(basepath, file_extension, options, callback) {
 		var self = this;
 
 		if (basepath !== "/index") {

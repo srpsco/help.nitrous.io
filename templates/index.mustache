@@ -12,7 +12,9 @@
       {{/posts}}
       </ul>
 
+      {{#has_more}}
       <a class="view-all btn" href="/categories/{{#downcase}}{{name}}{{/downcase}}">View all</a>
+      {{/has_more}}
     </div/>
   {{/categories}}
 

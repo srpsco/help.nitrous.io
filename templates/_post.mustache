@@ -19,5 +19,13 @@
 			{{{content}}}
 		</div>
 
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+				{{#tags}}
+					<li><a href="/categories/{{#downcase}}{{.}}{{/downcase}}">{{.}}</a></li>
+				{{/tags}}
+			</ul>
+		</div>
 	</article>
 </div>

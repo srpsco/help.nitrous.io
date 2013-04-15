@@ -1,21 +1,21 @@
 {{> header }}
 
-    <div class="categories clearfix">
+<div class="categories clearfix">
 
-			{{#categories}}
-        <div class="category">
-          <h3>{{#titleize}}{{name}}{{/titleize}}</h3>
+  {{#categories}}
+    <div class="category">
+      <h3>{{#titleize}}{{name}}{{/titleize}}</h3>
 
-          <ul class="posts">
-            {{#posts}}
-              <li><a href="{{permalink}}">{{title}}</a></li>
-            {{/posts}}
-          </ul>
+      <ul class="posts">
+      {{#posts}}
+      <li><a href="{{permalink}}">{{title}}</a></li>
+      {{/posts}}
+      </ul>
 
-            <a href="/categories/{{#downcase}}{{name}}{{/downcase}}">View all</a>
-        </div/>
-      {{/categories}}
+      <a class="view-all" href="/categories/{{#downcase}}{{name}}{{/downcase}}">View all</a>
+    </div/>
+  {{/categories}}
 
-		</div>
+</div>
 
 {{> footer }}

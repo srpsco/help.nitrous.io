@@ -20,10 +20,12 @@ How to preview:
 
 Todo:
 
-* Create main index and category index pages
+* Create
+  /index [x]
+  /categories
 
-* Move the `screenshots` directory
+* Move the `screenshots` directory to templates and fix image paths.
 
-* Implement simple search (Google Site Search?)
+* Implement simple search (Google Site Search?) [x]
 
 * Figure out a publishing strategy

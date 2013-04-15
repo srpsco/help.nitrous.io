@@ -1,0 +1,19 @@
+{{> header }}
+
+    <div class="categories">
+
+			{{#categories}}
+        <h3>{{#titleize}}{{name}}{{/titleize}}</h3>
+
+        <ul class="posts">
+          {{#posts}}
+            <li><a href="{{permalink}}">{{title}}</a></li>
+          {{/posts}}
+        </ul>
+        
+        <div><a href="/categories/{{#downcase}}{{name}}{{/downcase}}">View all</a>
+        
+      {{/categories}}
+		</div>
+    
+{{> footer }}

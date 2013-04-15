@@ -9,7 +9,10 @@
 
 	"plugins": {
 		"content_handler": "punch-blog-content-handler",
-    ".css": "punch-sass-compiler"
+
+		"helpers": {
+			"index_helper": "./helpers/index_helper.js"
+    }
 	},
 
   "blog": {

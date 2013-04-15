@@ -20,8 +20,31 @@ div[role=main] {
  	border-radius: 4px;
 }
 
+.categories {
+	margin: 16px 0;
+	.category {
+		float: left;
+		margin: 16px 0;
+		padding: 8px 16px;
+		margin-right: 24px;
+		height: 230px;
+		width: 434px;
+		.gradient(#f8f8f8, #f3f3f3);
+		border: 1px solid #eee;
+		.border-radius(2px);
+		&:nth-child(even) {
+			margin-right: 0;
+		}
+
+		ul {
+			min-height: 112px;
+		}
+	}
+}
+
 footer {
 	padding: 24px 0;
+	margin-top: 24px;
 	border-top: 2px solid #ddd;
 	font-size: 14px;
 	ul {

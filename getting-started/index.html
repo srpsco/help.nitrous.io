@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366090239000.css">
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<h4>
+					<i role="icon" aria-hidden="true" class="icon-tag"></i>
+					Categories:
+				</h4>
+				<ul>
+						<li><a href="/categories/overview">overview</a></li>
+						<li><a href="/categories/accounts">accounts</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Getting started</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Mon Apr 15 2013 22:30:28 GMT-0700 (PDT)" pubdate>Mon Apr 15 2013 22:30:28 GMT-0700 (PDT)</time></div>
+
+		<div class="entry-content">
+			<p>Our goal is to provide you with a streamlined, beautiful and, enjoyable programming experience.</p>
+<p>If you have any problems setting things up, check out <a href="http://help.nitrous.io">help.nitrous.io</a> or send us an email at support at action dot io.</p>
+<h3>1. Sign Up for an Account</h3>
+<p>Our beta period is invite-only, so if you haven&#39;t received an invite, you can signup for our beta list on our <a href="https://nitrous.io">homepage</a>.</p>
+<p>If you&#39;ve received the beta invite email, just click the link in the email and fill out a username and password.  We&#39;ll use the username around the site and to identify your boxes so pick something you like.</p>
+<h3>2. Create a box</h3>
+<p>Once you&#39;ve signed in to the site, you&#39;ll see your dashboard. You won&#39;t have any boxes created yet, so go ahead and click &quot;New Box&quot;. If you need help creating a box, you can follow <a href="/box-new">these instructions</a>.</p>
+<h3>3. Adding SSH Keys to your Action Box</h3>
+<p>Adding your local SSH keys to your remote Action box will allow you to SSH into your box from Terminal / PuTTY etc…. This is great for developers who use Vim or Emacs.</p>
+<p>If you&#39;re not already using SSH, this article can walk you through the steps required:</p>
+<p><a href="/ssh-add">Adding SSH Keys to your Nitrous.IO Account</a></p>
+<p>To test out whether you&#39;ve added your keys directly, click your box in the dashboard to toggle its details and click the SSH URI link:</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/box-details.png" alt="Box Details"></p>
+<p>Your browser will attempt to open a local terminal session. If there&#39;s a prompt like this, just click &quot;Allow&quot;:</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/ssh-confirm-prompt.png" alt="SSH Prompt"></p>
+<p>In your terminal, you should see something like this:</p>
+<pre><code>The authenticity of host &#39;[apse1.actionbox.io]:10253     ([54.251.42.128]:10253)&#39; can&#39;t be established.
+RSA key fingerprint is 57:b7:dd:50:04:09:e8:f8:e5:93:e1:2d:2f:46:a5:f5.
+Are you sure you want to continue connecting (yes/no)? yes</code></pre>
+<p>Type &quot;yes&quot;, which will add your Action box to your known_hosts ssh file.</p>
+<p>Warning: Permanently added &#39;[apse1.actionbox.io]:10253,    [54.251.42.128]:10253&#39; (RSA) to the list of known hosts.
+    Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)</p>
+<p>Now go ahead and poke around-- you should be in your remote box on Nitrous.IO!</p>
+<h3>4. Add Action Box SSH Keys to Github</h3>
+<p>So we&#39;ve got our development box built, but what if we want to get a project we&#39;ve been working on into our box on Action?</p>
+<p>Adding SSH Keys to Github is super easy, just check out the steps in the following article:</p>
+<p><a href="/github-add-key">Adding SSH Keys to Github</a></p>
+<p>Now, you can go back to your Nitrous.IO box in your local terminal or in the Nitrous.IO Web IDE and can clone any of your Github repos.</p>
+<p><a href="http://www.youtube.com/watch?v=CtwJvgPJ9xw&amp;t=0m14s">Now you rollin&#39;</a>.</p>
+
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/overview">overview</a></li>
+					<li><a href="/categories/accounts">accounts</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="https://www.nitrous.io/sign_up">sign up</a></li>
+              <li><a href="https://www.nitrous.io/sign_in">sign in</a></li>
+              <li><a href="https://help.nitrous.io/privacy">privacy</a></li>
+              <li><a href="https://www.nitrous.io/security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

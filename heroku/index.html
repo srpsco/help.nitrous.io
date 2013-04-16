@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366090239000.css">
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<h4>
+					<i role="icon" aria-hidden="true" class="icon-tag"></i>
+					Categories:
+				</h4>
+				<ul>
+						<li><a href="/categories/deployment">deployment</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Heroku integration</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Mon Apr 15 2013 22:30:28 GMT-0700 (PDT)" pubdate>Mon Apr 15 2013 22:30:28 GMT-0700 (PDT)</time></div>
+
+		<div class="entry-content">
+			<p>Nitrous.IO integrates with Heroku for convenient and easy application deployment. Connecting your Nitrous.IO box to Heroku is easy:</p>
+<h3>1. <a href="https://www.nitrous.io/login">Login</a> to your Nitrous.IO account</h3>
+<p>If you don&#39;t already have an account, <a href="https://www.nitrous.io">sign up for an invite</a></p>
+<h3>2. Create a Development Box</h3>
+<p>If you don&#39;t already have a box created, you&#39;ll need to create one on a platform that runs on Heroku.  Luckily, Heroku supports most environments.</p>
+<p>You can read about <a href="/box-new">creating development boxes here</a></p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/new-box-button.png" alt="New Box Button"></p>
+<h3>3. Connect your Box to Github</h3>
+<p>If you haven&#39;t already connected to Github, <a href="/github-add-key">Generate a public key for your newly created development box and add it to Github</a></p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/reveal-public-key.png" alt="Reveal Public Key"></p>
+<h3>4. Authenticate with Heroku</h3>
+<pre><code> heroku login
+ username: aj@nitrous.io
+ password: ********</code></pre>
+<h3>5. Add your ssh key to heroku</h3>
+<pre><code> heroku keys:add</code></pre>
+<h3>6. Configure git</h3>
+<pre><code> git config --global user.email “(your git email)”
+ git config --global user.name “(your git username)”</code></pre>
+<h3>7. Clone a Project</h3>
+<p>Since we&#39;ve authenticated with Github, lets clone a git project that we&#39;ll be deploying to Heroku</p>
+<pre><code> git clone git@gitbub.com:(username)/(reponame).git
+ cd (repository name)
+ (repository name)$: bundle install</code></pre>
+<h3>8. Add the Heroku remote url</h3>
+<pre><code> (reponame)$: git remote add heroku git@heroku.com:(heroku-app-name).git</code></pre>
+<h3>9. Update the upstream git branches</h3>
+<pre><code> (reponame)$: git branch --set-upstream master origin/master
+ (reponame)$: git branch --set-upstream master heroku/master</code></pre>
+<p>And that&#39;s it!  Your development box will now be connected to your Heroku account and you can deploy as you would on your local machine.</p>
+<p>Of course, if you&#39;re having trouble, you can always <a href="mailto:support@nitrous.io?subject=Heroku%20Authenticaion%20Issues">talk to a real human</a>.</p>
+
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/deployment">deployment</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="https://www.nitrous.io/sign_up">sign up</a></li>
+              <li><a href="https://www.nitrous.io/sign_in">sign in</a></li>
+              <li><a href="https://help.nitrous.io/privacy">privacy</a></li>
+              <li><a href="https://www.nitrous.io/security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

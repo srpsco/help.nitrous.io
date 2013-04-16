@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366090239000.css">
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<h4>
+					<i role="icon" aria-hidden="true" class="icon-tag"></i>
+					Categories:
+				</h4>
+				<ul>
+						<li><a href="/categories/integrations">integrations</a></li>
+						<li><a href="/categories/databases">databases</a></li>
+						<li><a href="/categories/heroku">heroku</a></li>
+						<li><a href="/categories/postgres">postgres</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Create a postgres development database</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Mon Apr 15 2013 22:30:28 GMT-0700 (PDT)" pubdate>Mon Apr 15 2013 22:30:28 GMT-0700 (PDT)</time></div>
+
+		<div class="entry-content">
+			<p>This guide walks through how you can setup a Heroku Postgres database
+on your Nitrous.IO box.</p>
+<h3>Create a Database on Heroku Postgres</h3>
+<p>In: <a href="https://postgres.heroku.com">Heroku Postgres</a></p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/hpgres.png" alt="Heroku Postgres Homepage"></p>
+<p>Go ahead and sign into Heroku Postgres. Once in the dashboard, you&#39;ll
+see a list of any databases you&#39;ve already created. Click the &quot;Create
+Database&quot; button on the top-right of the screen.
+You&#39;ll see a bunch of professional plans appear below. You can ignore
+these until you&#39;ve deployed your new world-changing application to
+production and you have millions of customers and can afford them.</p>
+<p>Heroku knows we need something lightweight to get our feet wet, so for
+now we&#39;ll just pick the &quot;Dev Plan (free)&quot; option.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/dev-plan.png" alt="Dev Plan Button"></p>
+<p>You&#39;ll see your new database at the top of your list of databases (or
+just one if you just created an account). Heroku will create a zen name
+for you, the one we created happens to have the name &quot;salty-water-676&quot;.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/create-database.png" alt="Create Database"></p>
+<p>For clarity lets rename the database so we know it&#39;s a development
+database. Click the database you just created to navigate to the
+database dashboard.
+Click the database title and a modal will appear where you can change
+the name of your database. Rename it something relevant to your
+application, for e.g. if you were to make a to-do app, you can rename it
+to &quot;todo-app-dev&quot;.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/database-rename.png" alt="Rename Database"></p>
+<h3>Heroku Postgres Connection Settings</h3>
+<p>In the <em>Heroku Postgres</em> website, click your database name
+(todo-app-dev) to get to the database dashboard. You will see your
+database connection settings listed, including &quot;Host&quot;, &quot;Database&quot;,
+&quot;User&quot;, &quot;Port&quot;, &quot;Password&quot; (you will need to click &#39;Show&#39; to reveal your
+password).</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/heroku-settings.png" alt="Heroku Settings"></p>
+<p>Grab each of the values and assign them to environment variables in your
+&quot;~/.bashrc&quot; file on your Nitrous.IO box. This will ensure that every time you log into your Nitrous.IO box, your
+database credentials will be available as environment variables to use
+in any of your apps. It is good practice to namespace your environment
+variables with the environment that you want to use your database in
+(development or test), like so:</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/env-variables.png" alt="Env Variables"></p>
+<p>If you want the environment variables to be loaded immediately, run:
+    source ~/.bashrc</p>
+<p>You can verify that your Postgres credentials are loaded correctly by
+running:
+    echo $TODO_APP_DEV_HOST</p>
+<p>This should return &quot;ec2-107-22-164-225.compute-1.amazonaws.com&quot;</p>
+<h4>Rails/Ruby</h4>
+<p>You can now access your database in your Rails application by doing the
+following:</p>
+<pre><code>ENV[&#39;TODO_APP_DEV_HOST&#39;]
+ENV[&#39;TODO_APP_DEV_PORT&#39;]
+ENV[&#39;TODO_APP_DEV_USER&#39;]
+ENV[&#39;TODO_APP_DEV_PASSWORD&#39;]
+ENV[&#39;TODO_APP_DEV_DATABASE&#39;]</code></pre>
+<p>(Please note, you&#39;ll probably need to install the
+<a href="http://rubygems.org/gems/pg">pg</a> Rubygem
+before you use Postgres in a Rails app, using the following command:</p>
+<pre><code>gem install pg</code></pre>
+<p>Here&#39;s an example of database.yml file used in Rails which uses the
+environment variables to connect to the Heroku Postgres database you
+created.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/database-ruby.png" alt="Rails Postgres Settings"></p>
+<p>A more detailed tutorial is present on the <a href="http://blog.nitrous.io/2013/02/11/postgres-action-io-3.html">Nitrous.IO
+blog</a></p>
+<h4>Node.JS</h4>
+<p>In Node.JS, you can access each of the environment variables by using:</p>
+<pre><code>process.env.TODO_APP_DEV_HOST
+process.env.TODO_APP_DEV_PORT
+process.env.TODO_APP_DEV_USER
+process.env.TODO_APP_DEV_PASSWORD
+process.env.TODO_APP_DEV_DATABASE</code></pre>
+<p>(Please note, you&#39;ll probably need to install the
+<a href="https://npmjs.org/package/pg">pg</a> NPM
+before you use Postgres in a Node.JS app, using the following command:</p>
+<pre><code>npm install -g pg</code></pre>
+<p>Here&#39;s an example nodejs code to connect to Heroku Postgres using the
+environment variables we have set up.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/database-nodejs.png" alt="Postgres Settings"></p>
+<h4>Django/Python</h4>
+<p>In Python, you can access each of the environment variables by using:</p>
+<pre><code>os.environ[&#39;TODO_APP_DEV_HOST&#39;]
+os.environ[&#39;TODO_APP_DEV_PORT&#39;]
+os.environ[&#39;TODO_APP_DEV_USER&#39;]
+os.environ[&#39;TODO_APP_DEV_PASSWORD&#39;]
+os.environ[&#39;TODO_APP_DEV_DATABASE&#39;]</code></pre>
+<p>(Please note, you&#39;ll probably need to install the
+<a href="http://initd.org/psycopg/">psycopg2</a> module
+before you use Postgres in a Django app, using the following command:</p>
+<pre><code>pip install --user psycopg2</code></pre>
+<p>Here&#39;s an example of a settings.py file which initializes the Heroku
+Postgres credentials for use within a Django app.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/database-python.png" alt="Postgres Settings"></p>
+
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/integrations">integrations</a></li>
+					<li><a href="/categories/databases">databases</a></li>
+					<li><a href="/categories/heroku">heroku</a></li>
+					<li><a href="/categories/postgres">postgres</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="https://www.nitrous.io/sign_up">sign up</a></li>
+              <li><a href="https://www.nitrous.io/sign_in">sign in</a></li>
+              <li><a href="https://help.nitrous.io/privacy">privacy</a></li>
+              <li><a href="https://www.nitrous.io/security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366081694000.css">
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<span role="icon" aria-hidden="true" class="icon-tag"></span><h4>Categories:</h4></span>
+				<ul>
+						<li><a href="/categories/ssh">ssh</a></li>
+						<li><a href="/categories/mac">mac</a></li>
+						<li><a href="/categories/public-keys">public-keys</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Adding SSH Keys (mac)</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Mon Apr 15 2013 20:08:14 GMT-0700 (PDT)" pubdate>Mon Apr 15 2013 20:08:14 GMT-0700 (PDT)</time></div>
+
+		<div class="entry-content">
+			<p>SSH Keys enable you to manage your Action boxes directly from your computer.  The keypair is used to identify you when interacting with your box from outside of the website.</p>
+<ul class="inline choices">
+  <li class="selected">Mac</li>
+  <li><a href="/ssh-windows">Windows</a></li>
+</ul>
+
+<h3>1: Generate a public key</h3>
+<p>On your <strong>personal computer</strong> enter the code below. We want the default settings so when asked to enter a file in which to save the key, just press enter.</p>
+<pre><code>ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;
+# Creates a new ssh key using the provided email
+
+# Generating public/private rsa key pair.
+# Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]</code></pre>
+<p>Now you enter a passphrase (passphrases make things more secure).</p>
+<pre><code># Enter passphrase (empty for no passphrase): [Type a passphrase]
+# Enter same passphrase again: [Type passphrase again]
+Which should give you something like this:
+
+# Your identification has been saved in /Users/you/.ssh/id_rsa.
+# Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
+# The key fingerprint is:
+# 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@youremail.com</code></pre>
+<h3>2: Adding keys to Nitrous.IO</h3>
+<p>Run the following code to copy the key to your clipboard.</p>
+<pre><code>pbcopy &lt; ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard</code></pre>
+<p><strong> Make sure you copy the key <em>exactly</em> without newlines or whitespace. The pbcopy command helps copy just the contents with no extraneous characters. </strong></p>
+<p>If you don&#39;t have the pbcopy command, copy the output of the following command:</p>
+<pre><code>cat ~/.ssh/id_rsa.pub</code></pre>
+<p>Next, Login to your Nitrous.IO account and click &quot;Public Keys&quot; in the top right navigation.  You shouldn&#39;t have any keys listed if this is the first key you are adding. Click the &quot;Add Public key&quot; button:</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/add-public-key-button.png" alt="Public Key Button"></p>
+<p>Next, add a name for the SSH key e.g. &quot;AJ&#39;s MBA&quot;.  This is helpful to identify which machines you&#39;ve given access to your action boxes, so make it descriptive.</p>
+<p>Then, paste your key into the &quot;Key&quot; field that you copied in section 2. of the article and click the &quot;Add key&quot;.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/public-key-form.png" alt="Public Key Form"></p>
+<h3>3. Make sure it works</h3>
+<p>To make sure everything works we&#39;ll now SSH into your box. You&#39;ll be asked to authenticate this action using your password, which is the passphrase you created earlier.</p>
+<p>Click the &quot;boxes&quot; link in the top navigation.  Then click any box you&#39;ve created to expand its details:</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/box-details.png" alt="Box Details"></p>
+<p>Click the SSH URI link, it should look something like the link in the screenshot above.</p>
+<p>Your browser will attempt to open a local terminal session. If there&#39;s a prompt like this, just click &quot;Allow&quot;:</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/ssh-confirm-prompt.png" alt="SSH Prompt"></p>
+<p>In your terminal, you might see something like this:</p>
+<pre><code>The authenticity of host &#39;[apse1.actionbox.io]:10253    ([54.251.42.128]:10253)&#39; can&#39;t be established.
+RSA key fingerprint is 57:b7:dd:50:04:09:e8:f8:e5:93:e1:2d:2f:46:a5:f5.
+Are you sure you want to continue connecting (yes/no)? yes</code></pre>
+<p>Don&#39;t worry, this is supposed to happen. Verify that the fingerprint matches the one here and type &quot;yes&quot;. This will add your Action box to your known_hosts ssh file.</p>
+<pre><code>Warning: Permanently added &#39;[apse1.actionbox.io]:10253, [54.251.42.128]:10253&#39; (RSA) to the list of known hosts.
+Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)</code></pre>
+<p>Now you&#39;ve got your SSH keys setup so you can connect via Terminal / PuTTY and use Vim or Emacs to code!</p>
+
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/ssh">ssh</a></li>
+					<li><a href="/categories/mac">mac</a></li>
+					<li><a href="/categories/public-keys">public-keys</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="https://www.nitrous.io/sign_up">sign up</a></li>
+              <li><a href="https://www.nitrous.io/sign_in">sign in</a></li>
+              <li><a href="https://help.nitrous.io/privacy">privacy</a></li>
+              <li><a href="https://www.nitrous.io/security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

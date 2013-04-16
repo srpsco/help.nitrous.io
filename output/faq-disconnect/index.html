@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366081694000.css">
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<span role="icon" aria-hidden="true" class="icon-tag"></span><h4>Categories:</h4></span>
+				<ul>
+						<li><a href="/categories/faq">faq</a></li>
+						<li><a href="/categories/web-ide">web-ide</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Server disconnects on browser close</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Mon Apr 15 2013 20:08:14 GMT-0700 (PDT)" pubdate>Mon Apr 15 2013 20:08:14 GMT-0700 (PDT)</time></div>
+
+		<div class="entry-content">
+			<p>If you&#39;re running a server or long-running process that you don&#39;t want to interrupt when you mistakenly close your browser window, we suggest using a terminal multiplexer like <a href="http://www.gnu.org/software/screen/">screen</a> or <a href="http://tmux.sourceforge.net/">tmux</a> and creating a persistent session to which you can reconnect.</p>
+<p>We pre-install tmux on all boxes, so you&#39;re ready to go out of the gate. You can access tmux via the terminal in <a href="ide-general#console">the Web IDE</a> or by <a href="/categories/ssh">SSHing into your box</a>.</p>
+<h3>Getting started with tmux</h3>
+<p>At it&#39;s core, tmux is made of <em>sessions</em> which contain any number of <em>windows</em> which can be split into <em>panes</em>. That&#39;s pretty much it.</p>
+<p><strong>Create a new Session</strong></p>
+<p>In a Web IDE console window, you can create a new tmux session named &quot;my_session&quot; like so:</p>
+<pre><code>tmux new -s my_session</code></pre>
+<p><strong>List sessions</strong></p>
+<pre><code>tmux ls</code></pre>
+<p><strong>Attach to a session</strong></p>
+<pre><code>tmux attach -t my_session</code></pre>
+<p><strong>Detach a session</strong></p>
+<pre><code>tmux detach</code></pre>
+<p><strong>Create window</strong></p>
+<pre><code>tmux new-window</code></pre>
+<h3>Navigating tmux</h3>
+<p>The exact key bindings will depend on your operating system and keyboard setup. To see the current key bindings, type:</p>
+<pre><code>tmux list-keys</code></pre>
+<p>To get a list of tmux commands:</p>
+<pre><code>tmux list-commands</code></pre>
+<p class="alert">
+Note that navigating in tmux will take a bit of time to master. Switching windows and creating different pane layouts isn&#39;t as easy as dragging windows in a GUI so you&#39;ll want to customize your tmux configuration file (~/.tmux.conf).
+</p>
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/faq">faq</a></li>
+					<li><a href="/categories/web-ide">web-ide</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="https://www.nitrous.io/sign_up">sign up</a></li>
+              <li><a href="https://www.nitrous.io/sign_in">sign in</a></li>
+              <li><a href="https://help.nitrous.io/privacy">privacy</a></li>
+              <li><a href="https://www.nitrous.io/security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

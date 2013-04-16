@@ -1,6 +1,6 @@
 # help.action.io output
 
-1. Run punch generate to get the full output in the master branch
+1. In *master*, run punch generate to get the full output in the
 
     punch generate
 
@@ -10,16 +10,20 @@
 
 3. Move the newly generated output to root directory
 
-    mv output .
+    mv output/* .
 
-4. Stage the new output
+4. Remove the empty output folder
+
+    rm -rf output
+
+5. Stage the new output
 
     git add .
 
-5. Commit the new output
+6. Commit the new output
 
     git commit -m "help updates [datetime]"
 
-6. Push to github pages
+7. Push to github pages
 
     git push origin gh-pages

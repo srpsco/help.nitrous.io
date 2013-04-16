@@ -2,6 +2,7 @@
 tmp/
 *.swp
 **.orig
+node_modules/
 
 # OSX
 .DS_Store

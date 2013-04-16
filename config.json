@@ -31,6 +31,7 @@
 			"/css/main.css",
 			"/css/site.less",
       "/css/header.less",
+      "/css/font-awesome.less",
       "/css/google-search.css"
 		]
 	}

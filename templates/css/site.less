@@ -5,176 +5,185 @@
 @title-color: #000;
 
 html {
-	background: @page-background;
+  background: @page-background;
 }
 
 body {
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 img {
-	padding: 5px;
-	border: 1px solid #ddd;
-	max-width: 948px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  max-width: 788px;
 }
 
 a {
   text-decoration: none;
-	&:hover {
-  	text-decoration: underline;
-	}
+  &:hover {
+    text-decoration: underline;
+  }
 
-	&:visited {
-  	color: rgb(0,0,238);
-	}
+  &:visited {
+    color: rgb(0,0,238);
+  }
 
-	&.btn {
-		.button();
-	}
+  &.btn {
+    .button();
+  }
 }
 
 div[role=main] {
-	width: 960px;
-	margin: 0 auto;
-	background: #FFF;
- 	border-radius: 4px;
+  width: 800px;
+  margin: 0 auto;
+  background: #FFF;
+  border-radius: 4px;
 
- 	.date-updated {
- 		color: #aaa;
- 		time {
+  .date-updated {
+    color: #aaa;
+    time {
 
- 		}
- 	}
+    }
+  }
 
- 	.ftags {
- 		margin: 0;
- 		padding: 8px 0 0;
- 		ul {
- 			margin: 0;
- 			padding: 0;
- 			display: block;
- 			list-style: none;
- 			li {
- 				display: inline;
- 				margin-right: 8px;
- 				&.label {
- 					font-weight: bold;
- 				}
- 			}
- 		}
- 	}
+  .ftags {
+    margin: 0;
+    padding: 8px 0 0;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: block;
+      list-style: none;
+      li {
+        display: inline;
+        margin-right: 8px;
+        &.label {
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
 
 .categories {
-	margin: 16px 0;
-	.category {
-		margin: 16px 0 0;
-		padding: 16px 0;
-		&:nth-child(even) {
-			margin-right: 0;
-		}
+  margin: 16px 0;
+  .category {
+    margin: 16px 0 0;
+    padding: 0;
+    &:nth-child(even) {
+      margin-right: 0;
+    }
 
-		h3 {
-			margin: 0;
-		}
+    h3 {
+      margin: 0;
+    }
 
-		ul {
-			padding-left: 0;
-			margin: 8px 0;
-			list-style: none;
-			padding-bottom: 0;
-			li {
-				margin: 4px 0;
-			}
+    ul {
+      padding-left: 0;
+      margin: 8px 0;
+      list-style: none;
+      padding-bottom: 0;
+      li {
+        margin: 4px 0;
+      }
+    }
 
-			a.btn {
-				padding: 3px 8px;
-			}
-		}
-	}
+    a.view-all {
+      color: #aaa;
+    }
+  }
 }
 
 footer {
-	padding: 24px 0;
-	margin-top: 24px;
-	border-top: 2px solid #ddd;
-	font-size: 14px;
-	ul {
-		list-style: none;
-		margin: 0 0 24px;
-		padding: 0;
-		&.social {
-			float: right;
-		}
+  padding: 24px 0;
+  margin-top: 24px;
+  border-top: 2px solid #ddd;
+  font-size: 14px;
+  ul {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+    &.social {
+      float: right;
+    }
 
-		li {
-			float: left;
-			margin-right: 16px;
-			&:last-child {
-				margin-right: 0;
-			}
+    li {
+      float: left;
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
 
-			a {
-				color: #aaa;
-				text-decoration: none;
-				&:hover {
-					color: #222;
-					.transition(.3s);
-				}
-			}
+      a, a:visited {
+        color: #aaa;
+        text-decoration: none;
+        &:hover {
+          color: #222;
+          .transition(.3s);
+        }
+      }
 
-			&.twitter a:hover {
-				color: #79f;
-			}
+      &.twitter a:hover {
+        color: #79f;
+      }
 
-			&.facebook a:hover {
-				color: #35a;
-			}
-		}
-	}
+      &.facebook a:hover {
+        color: #35a;
+      }
+    }
+  }
 }
 
 h3, h4 {
-	border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 h1 {
-	margin: 0.5em 0 0 0;
-	padding: 0;
-	color: @title-color;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+  color: @title-color;
+  &.with-icon {
+    i {
+      color: #aaa;
+    }
+
+    &.h1 {
+      margin-left: -38px;
+    }
+  }
 }
 
 .navbar {
-	display: block;
-	list-style: none;
-	padding: 0;
-	margin: 0.5em 0 0.67em 0;
-	text-align: center;
-	li {
-		display: inline-block;
-		margin: 0 0.5em;
-		a {
-			font-size: 1.5em;
-			text-decoration: none;
-			color: #737373;
-		}
-	}
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0.67em 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 0.5em;
+    a {
+      font-size: 1.5em;
+      text-decoration: none;
+      color: #737373;
+    }
+  }
 }
 
 aside[role="meta"] {
-	float: right;
-	padding: 8px 16px;
-	background: #f1f1f1;
-	width: 228px;
-	min-height: 120px;
-	margin-left: 24px;
-	margin-bottom: 24px;
+  float: right;
+  padding: 8px 16px;
+  background: #f1f1f1;
+  width: 228px;
+  min-height: 120px;
+  margin-left: 24px;
+  margin-bottom: 24px;
 
-	h4 {
-		margin: .665em 0 1.33em;
-		border-bottom: 0;
-	}
+  h4 {
+    margin: .665em 0 1.33em;
+    border-bottom: 0;
+  }
 }
 
 

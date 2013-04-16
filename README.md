@@ -12,10 +12,14 @@
 
     mv output .
 
-4. Commit the new output
+4. Stage the new output
+
+    git add .
+
+5. Commit the new output
 
     git commit -m "help updates [datetime]"
 
-5. Push to github pages
+6. Push to github pages
 
     git push origin gh-pages

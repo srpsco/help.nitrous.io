@@ -68,6 +68,53 @@ div[role=main] {
 
 .categories {
   margin: 16px 0;
+  ul#getting-started {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+    li.module {
+      list-style: none;
+      float: left;
+      text-align: center;
+      margin-right: 16px;
+      display: table-cell;
+      vertical-align: bottom;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        width: 156px;
+        padding: 16px;
+        background: #f3f3f3;
+        display: block;
+        vertical-align: baseline;
+        color: #aaa;
+        &:hover {
+          text-decoration: none;
+          h5 {
+            color: #222;
+          }
+
+          i {
+            color: #222;
+          }
+
+          .transition(.5s);
+        }
+
+        h5 {
+          color: #777;
+          margin: 16px 0 0;
+        }
+
+        i {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+
   .category {
     margin: 16px 0 0;
     padding: 0;

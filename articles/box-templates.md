@@ -2,7 +2,6 @@
 title: Box templates
 published: true
 tags:
-- overview
 - boxes
 ---
 

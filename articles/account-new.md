@@ -3,7 +3,6 @@ title: Create an account
 published: true
 tags:
 - overview
-- accounts
 ---
 
 Nitrous.IO offers free accounts with basic functionality.  Code on Nitrous.IO for as long as you want, and if you feel the need for more speed and a faster box with additional features, you can upgrade to take things to the next level.

@@ -4,7 +4,6 @@ published: true
 tags:
 - integrations
 - databases
-- 3rd-party
 ---
 
 This guide walks through how you can setup a MongoDB database

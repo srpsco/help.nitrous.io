@@ -14,7 +14,6 @@ We encourage you to utilize the amazing [Stack Overflow](http://stackoverflow.co
 
 If you have an urgent question about stability or performance of your development box, please [send us an email](mailto: support@nitrous.io).
 
-
 ### Chat Room
 
 We have a [public campfire chatroom](https://www.nitrous.io/chat) where many of the Nitrous.IO employees hang out. Our team is spread out around the world, so odds are there will be somebody here to answer your question. Please don't troll the forums, that's just not cool bro.

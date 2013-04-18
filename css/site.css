@@ -65,6 +65,36 @@ div[role=main] {
 div[role=main] .date-updated {
   color: #aaa;
 }
+div[role=main] .logo-group {
+  margin: 32px 0 0;
+}
+div[role=main] .logo-container {
+  text-align: center;
+  padding: 16px;
+}
+div[role=main] .logo-container.left {
+  float: left;
+  width: 320px;
+}
+div[role=main] .logo-container.right {
+  float: right;
+  width: 320px;
+}
+div[role=main] .logo-container h5 {
+  font-weight: normal;
+  color: #777;
+}
+div[role=main] .logo-container.white {
+  background: #2a2c2f;
+}
+div[role=main] .logo-container.white h5 {
+  color: #d3d5d8;
+  margin-bottom: 0;
+}
+div[role=main] .logo-container img {
+  border: none;
+  padding: 0;
+}
 div[role=main] .ftags {
   margin: 0;
   padding: 8px 0 0;
@@ -84,6 +114,49 @@ div[role=main] .ftags ul li.label {
 }
 .categories {
   margin: 16px 0;
+}
+.categories ul#getting-started {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+.categories ul#getting-started li.module {
+  list-style: none;
+  float: left;
+  text-align: center;
+  margin-right: 16px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+.categories ul#getting-started li.module:last-child {
+  margin-right: 0;
+}
+.categories ul#getting-started li.module a {
+  width: 156px;
+  padding: 16px;
+  background: #f3f3f3;
+  display: block;
+  vertical-align: baseline;
+  color: #aaa;
+}
+.categories ul#getting-started li.module a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+.categories ul#getting-started li.module a:hover h5 {
+  color: #222;
+}
+.categories ul#getting-started li.module a:hover i {
+  color: #222;
+}
+.categories ul#getting-started li.module a h5 {
+  color: #777;
+  margin: 16px 0 0;
+}
+.categories ul#getting-started li.module a i {
+  font-size: 48px;
 }
 .categories .category {
   margin: 16px 0 0;

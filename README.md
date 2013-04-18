@@ -20,7 +20,7 @@ How to preview:
 
 Todo:
 
-* Move the `screenshots` directory to templates and fix image paths.
+* Fix image paths to use /templates/screenshots
 
 * Configure Google Site Search
 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366246272000.css">
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/users/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<h4>
+					<i role="icon" aria-hidden="true" class="icon-tag"></i>
+					Categories:
+				</h4>
+				<ul>
+						<li><a href="/categories/previewing">previewing</a></li>
+						<li><a href="/categories/overview">overview</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Previewing your application</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Wed Apr 17 2013 13:45:23 GMT-0700 (PDT)" pubdate>Wed Apr 17 2013 13:45:23 GMT-0700 (PDT)</time></div>
+
+		<div class="entry-content">
+			<p>Nitrous.IO provides a range of ports [1024 - 9999] for you to run services on your development box.</p>
+<p>Previewing your application simply involves taking an automatically generated <span class="tag">preview url</span>, pasting it into your browser, and appending the appropriate port where your service is running.</p>
+<p>You can find the <span class="tag">preview url</span> from the following two locations:</p>
+<ul>
+<li><a href="#preview-webide">Getting the Preview URL from the Web IDE</a></li>
+<li><a href="#preview-boxindex">Getting the Preview URL from the Boxes Dashboard</a></li>
+</ul>
+<p><a name="preview-webide"></a></p>
+<h3>From the Web IDE</h3>
+<p>The &quot;Preview&quot; menu in the <a href="/categories/web-ide">Action Web IDE</a> displays links to some common default ports, which you can click to open a new window in your browser.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/preview-menu.png" alt="Preview Menu"></p>
+<p>You can easily edit the urls from any of those links to preview other services you&#39;re running by substituting your desired port.</p>
+<p><a name="preview-boxindex"></a></p>
+<h3>From the Boxes Dashboard</h3>
+<p>You&#39;ll also find your <span class="tag">preview url</span> in your boxes dashboard in the box-details.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/box-preview-url.png" alt="Box Dashboard Preview URL"></p>
+<p>If you&#39;re really smart, you&#39;ll notice we use some sensible naming conventions for your box preview url.  The box regions are probably tough to memorize, but regular users will remember it.</p>
+<pre><code>https://*[box-name]*.*[box-region]*.nitrous.io:*[port]*</code></pre>
+<h3>Ruby On Rails Example</h3>
+<p>If you&#39;re developing a Ruby on Rails project and using the default WEBrick web server, simply move into the Rails project directory in your console and run:</p>
+<pre><code>rails server</code></pre>
+<p>This will fire up an instance of the WEBrick web server by default (Rails can also use several other web servers). To see your application in action, click the &quot;Preview&quot; menu and select &quot;Port 3000&quot;. You should see your Rails development project in the new window that is opened.</p>
+<h3>Other Frameworks</h3>
+<p>For help on previewing applications written in other languages and frameworks, check the following <a href="/faq-localhost">support article</a>.</p>
+
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/previewing">previewing</a></li>
+					<li><a href="/categories/overview">overview</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="http://www.nitrous.io">sign up</a></li>
+              <li><a href="http://www.nitrous.io/users/sign_in">sign in</a></li>
+              <li><a href="http://help.nitrous.io/admin-privacy">privacy</a></li>
+              <li><a href="http://help.nitrous.io/admin-security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

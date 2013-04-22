@@ -38,14 +38,17 @@ Your browser will attempt to open a local terminal session. If there's a prompt 
 
 In your terminal, you should see something like this:
 
-	The authenticity of host '[apse1.actionbox.io]:10253 	([54.251.42.128]:10253)' can't be established.
-	RSA key fingerprint is 57:b7:dd:50:04:09:e8:f8:e5:93:e1:2d:2f:46:a5:f5.
-	Are you sure you want to continue connecting (yes/no)? yes
+<pre class="">
+  The authenticity of host '[apse1.actionbox.io]:10253 ([54.251.42.128]:10253)' cant be established.
+  RSA key fingerprint is 57:b7:dd:50:04:09:e8:f8:e5:93:e1:2d:2f:46:a5:f5.
+  Are you sure you want to continue connecting (yes/no)? yes
+</pre>
 
 Type "yes", which will add your Action box to your known_hosts ssh file.
 
-Warning: Permanently added '[apse1.actionbox.io]:10253,	[54.251.42.128]:10253' (RSA) to the list of known hosts.
-	Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)
+<pre class="">
+Warning: Permanently added '[apse1.actionbox.io]:10253, [54.251.42.128]:10253' (RSA) to the list of known hosts. Welcome to Nitrous.IO (GNU/Linux 3.2.0-31-virtual x86_64)
+</pre>
 
 Now go ahead and poke around-- you should be in your remote box on Nitrous.IO!
 

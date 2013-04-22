@@ -19,6 +19,13 @@ img {
   max-width: 788px;
 }
 
+pre {
+  background: #444;
+  color: #f8f8f8;
+  font-size: 14px;
+  padding: 1em;
+}
+
 a {
   text-decoration: none;
   &:hover {
@@ -121,25 +128,38 @@ div[role=main] {
       }
 
       &.ide {
-        a {color: #ab9;}
+        a:hover {
+          background: #D1D7E8;
+          border-color: darken(#D1D7E8, 12);
+        }
       }
 
       &.ssh {
-        a {color: #88b;}
+        a:hover {
+          background: #f9f9e0;
+          border-color: darken(#f9f9e0, 12);
+        }
       }
 
       &.gs {
-        a {color: #b9b;}
+        a:hover {
+          background: #EFFFF2;
+          border-color: darken(#EFFFF2, 12);
+        }
       }
 
       &.github {
-        a {color: #b99;}
+        a:hover {
+          background: #eaeaea;
+          border-color: darken(#eaeaea, 12);
+        }
       }
 
       a {
-        width: 156px;
+        width: 154px;
         padding: 16px;
         background: #f3f3f3;
+        border: 1px solid #dedede;
         display: block;
         vertical-align: baseline;
         color: #aaa;
@@ -154,7 +174,7 @@ div[role=main] {
             color: #222;
           }
 
-          .transition(.5s);
+          .transition(.2s);
         }
 
         h5 {

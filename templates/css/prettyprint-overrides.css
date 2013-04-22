@@ -1,0 +1,5 @@
+pre.prettyprint, code.prettyprint {
+  border-radius: 2px !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+}

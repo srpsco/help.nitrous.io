@@ -32,7 +32,8 @@
 			"/css/site.less",
       "/css/header.less",
       "/css/font-awesome.less",
-      "/css/google-search.css"
+      "/css/google-search.css",
+      "/css/prettyprint-overrides.css"
 		]
 	}
 }

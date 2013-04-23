@@ -188,9 +188,12 @@ div[role=main] {
   }
 
   .category {
-    margin: 16px 0 0;
+    margin: 16px 0;
     padding: 0;
-    &:nth-child(even) {
+    float: left;
+    width: 388px;
+    margin-right: 24px;
+    &:nth-child(odd) {
       margin-right: 0;
     }
 
@@ -209,7 +212,11 @@ div[role=main] {
     }
 
     a.view-all {
-      color: #aaa;
+      color: #555;
+      padding: 5px 10px;
+      &:hover {
+        color: #222;
+      }
     }
   }
 }

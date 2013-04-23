@@ -12,8 +12,10 @@ Using the "connect" npm package, you can serve static files easily with node. Ma
 
 and then use the following code:
 
-    var connect = require('connect');
-    connect.createServer(connect.static(__dirname)).listen(3000);
+<pre class="prettyprint lang-javascript">
+  var connect = require('connect');
+  connect.createServer(connect.static(__dirname)).listen(3000);
+</pre>
 
 You can then run it by doing `node server.js` and your static files should be available at port 3000.
 

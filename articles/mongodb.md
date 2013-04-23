@@ -93,7 +93,9 @@ MongoDB database that you just created, by using the command
 You can now access your database in your Rails application for e.g. by
 using
 
-    ENV['MONGODB_DEVELOPMENT_URI']
+<pre class="prettyprint lang-ruby">
+ENV['MONGODB_DEVELOPMENT_URI']
+</pre>
 
 We recommend using the mongoid gem which you can install using:
 
@@ -115,9 +117,11 @@ the uri to be "ENV['MONGODB_DEVELOPMENT_URI']"
 
 In Node.JS, you can access each of the environment variables by using
 
-    process.env.MONGODB_DEVELOPMENT_HOST, process.env.MONGODB_DEVELOPMENT_PORT,
-    process.env.MONGODB_DEVELOPMENT_USER, process.env.MONGODB_DEVELOPMENT_PASSWORD,
-    process.env.MONGODB_DEVELOPMENT_DB, process.env.MONGODB_DEVELOPMENT_URI
+<pre class="prettyprint lang-javascript">
+process.env.MONGODB_DEVELOPMENT_HOST, process.env.MONGODB_DEVELOPMENT_PORT,
+process.env.MONGODB_DEVELOPMENT_USER, process.env.MONGODB_DEVELOPMENT_PASSWORD,
+process.env.MONGODB_DEVELOPMENT_DB, process.env.MONGODB_DEVELOPMENT_URI
+</pre>
 
 (Please note, you'll probably need to install the
 [mongoose](https://npmjs.org/package/mongoose) NPM
@@ -134,9 +138,11 @@ mongoose
 
 In Python, you can access each of the environment variables by using
 
-    os.environ['MONGODB_DEVELOPMENT_HOST'], "os.environ['MONGODB_DEVELOPMENT_PORT'],
-    os.environ['MONGODB_DEVELOPMENT_USER'], "os.environ['MONGODB_DEVELOPMENT_PASSWORD'],
-    os.environ['MONGODB_DEVELOPMENT_DB'], os.environ['MONGODB_DEVELOPMENT_URI']
+<pre class="prettyprint lang-python">
+os.environ['MONGODB_DEVELOPMENT_HOST'], os.environ['MONGODB_DEVELOPMENT_PORT'],
+os.environ['MONGODB_DEVELOPMENT_USER'], os.environ['MONGODB_DEVELOPMENT_PASSWORD'],
+os.environ['MONGODB_DEVELOPMENT_DB'], os.environ['MONGODB_DEVELOPMENT_URI']
+</pre>
 
 The instructions in the official MongoDB documentatin for Python is an
 excellent guide, but you can replace the settings in settings.py with

@@ -78,11 +78,13 @@ This should return "ec2-107-22-164-225.compute-1.amazonaws.com"
 You can now access your database in your Rails application by doing the
 following:
 
-    ENV['TODO_APP_DEV_HOST']
-    ENV['TODO_APP_DEV_PORT']
-    ENV['TODO_APP_DEV_USER']
-    ENV['TODO_APP_DEV_PASSWORD']
-    ENV['TODO_APP_DEV_DATABASE']
+<pre class="prettyprint lang-ruby">
+  ENV['TODO_APP_DEV_HOST']
+  ENV['TODO_APP_DEV_PORT']
+  ENV['TODO_APP_DEV_USER']
+  ENV['TODO_APP_DEV_PASSWORD']
+  ENV['TODO_APP_DEV_DATABASE']
+</pre>
 
 (Please note, you'll probably need to install the
 [pg](http://rubygems.org/gems/pg) Rubygem
@@ -103,11 +105,13 @@ blog](http://blog.nitrous.io/2013/02/11/postgres-action-io-3.html)
 
 In Node.JS, you can access each of the environment variables by using:
 
-    process.env.TODO_APP_DEV_HOST
-    process.env.TODO_APP_DEV_PORT
-    process.env.TODO_APP_DEV_USER
-    process.env.TODO_APP_DEV_PASSWORD
-    process.env.TODO_APP_DEV_DATABASE
+<pre class="prettyprint">
+process.env.TODO_APP_DEV_HOST
+process.env.TODO_APP_DEV_PORT
+process.env.TODO_APP_DEV_USER
+process.env.TODO_APP_DEV_PASSWORD
+process.env.TODO_APP_DEV_DATABASE
+</pre>
 
 (Please note, you'll probably need to install the
 [pg](https://npmjs.org/package/pg) NPM
@@ -124,17 +128,21 @@ environment variables we have set up.
 
 In Python, you can access each of the environment variables by using:
 
-    os.environ['TODO_APP_DEV_HOST']
-    os.environ['TODO_APP_DEV_PORT']
-    os.environ['TODO_APP_DEV_USER']
-    os.environ['TODO_APP_DEV_PASSWORD']
-    os.environ['TODO_APP_DEV_DATABASE']
+<pre class="prettyprint lang-python">
+os.environ['TODO_APP_DEV_HOST']
+os.environ['TODO_APP_DEV_PORT']
+os.environ['TODO_APP_DEV_USER']
+os.environ['TODO_APP_DEV_PASSWORD']
+os.environ['TODO_APP_DEV_DATABASE']
+</pre>
 
 (Please note, you'll probably need to install the
 [psycopg2](http://initd.org/psycopg/) module
 before you use Postgres in a Django app, using the following command:
 
-    pip install --user psycopg2
+<pre class="prettyprint lang-python">
+pip install --user psycopg2
+</pre>
 
 Here's an example of a settings.py file which initializes the Heroku
 Postgres credentials for use within a Django app.

@@ -10,6 +10,12 @@ img {
   border: 1px solid #ddd;
   max-width: 788px;
 }
+pre {
+  background: #000;
+  color: #fefefe;
+  font-size: 14px;
+  padding: 1em;
+}
 a {
   text-decoration: none;
 }
@@ -131,19 +137,33 @@ div[role=main] .ftags ul li.label {
 .categories ul#getting-started li.module:last-child {
   margin-right: 0;
 }
+.categories ul#getting-started li.module.ide a:hover {
+  background: #D1D7E8;
+  border-color: #a8b4d4;
+}
+.categories ul#getting-started li.module.ssh a:hover {
+  background: #f9f9e0;
+  border-color: #efefad;
+}
+.categories ul#getting-started li.module.gs a:hover {
+  background: #EFFFF2;
+  border-color: #b2ffc0;
+}
+.categories ul#getting-started li.module.github a:hover {
+  background: #eaeaea;
+  border-color: #cbcbcb;
+}
 .categories ul#getting-started li.module a {
-  width: 156px;
+  width: 154px;
   padding: 16px;
   background: #f3f3f3;
+  border: 1px solid #dedede;
   display: block;
   vertical-align: baseline;
   color: #aaa;
 }
 .categories ul#getting-started li.module a:hover {
   text-decoration: none;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  transition: 0.5s;
 }
 .categories ul#getting-started li.module a:hover h5 {
   color: #222;
@@ -159,10 +179,13 @@ div[role=main] .ftags ul li.label {
   font-size: 48px;
 }
 .categories .category {
-  margin: 16px 0 0;
+  margin: 16px 0;
   padding: 0;
+  float: left;
+  width: 388px;
+  margin-right: 24px;
 }
-.categories .category:nth-child(even) {
+.categories .category:nth-child(odd) {
   margin-right: 0;
 }
 .categories .category h3 {
@@ -178,7 +201,11 @@ div[role=main] .ftags ul li.label {
   margin: 4px 0;
 }
 .categories .category a.view-all {
-  color: #aaa;
+  color: #555;
+  padding: 5px 10px;
+}
+.categories .category a.view-all:hover {
+  color: #222;
 }
 footer {
   padding: 24px 0;

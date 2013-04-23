@@ -6,7 +6,8 @@
 		<title>Nitrous | Help</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366360705000.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366677931000.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
    </head>
 
 	<body>
@@ -61,19 +62,22 @@
 		</aside>
 
 		<h2 class="entry-title">Problems previewing my application</h2>
-		<div class="date-updated">Last Updated: <time class="updated" datetime="Fri Apr 19 2013 01:38:25 GMT-0700 (PDT)" pubdate>Fri Apr 19 2013 01:38:25 GMT-0700 (PDT)</time></div>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Mon Apr 22 2013 17:39:41 GMT-0700 (PDT)" pubdate>Mon Apr 22 2013 17:39:41 GMT-0700 (PDT)</time></div>
 
 		<div class="entry-content">
 			<p>Due to the way we handle network configuration on boxes, you will not be able to bind http servers to localhost (127.0.0.1).</p>
 <p>Your application will need to run on 0.0.0.0 or a specific IP address. Listening on port 3000 will allow you to use our preview menu for a shortcut.</p>
 <h3>Node.js example</h3>
 <p>Setting up a hello world web server on port 3000 using node.js.</p>
-<pre><code>var http = require(&#39;http&#39;);
-http.createServer(function (req, res) {
-  res.writeHead(200, {&#39;Content-Type&#39;: &#39;text/plain&#39;});
-  res.end(&#39;Hello World\n&#39;);
-}).listen(3000, &#39;0.0.0.0&#39;);
-console.log(&#39;Server running at http://0.0.0.0:3000/&#39;);</code></pre>
+<pre class="prettyprint lang-javascript">
+  var http = require('http');
+  http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World\n');
+  }).listen(3000, '0.0.0.0');
+  console.log('Server running at http://0.0.0.0:3000/');
+</pre>
+
 <p>Then make sure to run your node server in the console (substitute your file name):</p>
 <pre><code>run helloworld.js</code></pre>
 <h3>Python example</h3>

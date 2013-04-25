@@ -26,8 +26,7 @@ Setting up a hello world web server on port 3000 using node.js.
 
 Then make sure to run your node server in the console (substitute your file name):
 
-    run helloworld.js
-
+    node helloworld.js
 
 ### Python example
 

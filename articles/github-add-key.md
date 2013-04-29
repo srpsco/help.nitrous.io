@@ -4,7 +4,6 @@ published: true
 tags:
 - ssh
 - public keys
-- github
 ---
 
 For those developers using [Github](http://github.com), Action lets you easily add your box's ssh keys so managing your repositories is a breeze.

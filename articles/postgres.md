@@ -4,8 +4,6 @@ published: true
 tags:
 - integrations
 - databases
-- heroku
-- postgres
 ---
 
 This guide walks through how you can setup a Heroku Postgres database

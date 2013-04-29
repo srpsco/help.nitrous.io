@@ -2,7 +2,6 @@
 title: Refresh file tree in the web IDE
 published: true
 tags:
-- faq
 - web-ide
 ---
 

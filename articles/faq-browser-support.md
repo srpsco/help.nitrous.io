@@ -3,7 +3,6 @@ title: Browser support
 published: true
 tags:
 - faq
-- browsers
 ---
 
 ### Recommended Browsers

@@ -3,7 +3,6 @@ title: Getting started
 published: true
 tags:
 - overview
-- accounts
 ---
 
 Our goal is to provide you with a streamlined, beautiful and, enjoyable programming experience.

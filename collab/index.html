@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/site.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/header.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/google-search.css">
+<link rel="stylesheet" type="text/css" media="screen" href="/css/prettyprint-overrides.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/users/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<h4>
+					<i role="icon" aria-hidden="true" class="icon-tag"></i>
+					Categories:
+				</h4>
+				<ul>
+						<li><a href="/categories/collaboration">collaboration</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Collaborative Coding Overview</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Mon May 20 2013 00:45:24 GMT-0700 (PDT)" pubdate>Mon May 20 2013 00:45:24 GMT-0700 (PDT)</time></div>
+
+		<div class="entry-content">
+			<p>This post will give you a general overview of how to get started with Collaborative Code Editing on the Nitrous.IO development platform.</p>
+<h3>Start the Web IDE</h3>
+<p>Create a box on Nitrous.IO, or you can use a box that you&#39;ve already created. Collaboration works on any box template.</p>
+<p>In your list of boxes, click the IDE button to boot up the IDE for your box:</p>
+<p><img src="/screenshots/ide-button.png" alt="Web IDE"></p>
+<h3>Adding Collaborators</h3>
+<p>Now we&#39;ve got to give access to our friends / colleagues so they can access our box.</p>
+<p>Note that with adding collaborators comes great responsibility. Notably, you <em>must trust</em> who you are adding to your box. For extra security, you should practice the following:</p>
+<p><em>Use SSH Key with passphrase</em></p>
+<p>If you&#39;ve already added an SSH Key to Nitrous.IO without a passphrase, you&#39;ll need to delete it and re-generate one with a passphrase.</p>
+<p><em>Use HTTPS authentication with Github</em></p>
+<p>Using HTTPS authentication with Github should prompt you for your password, thus restricting any abuse from collaborators (but they&#39;re your friends, why would they do that?!). Better safe then sorry…my friends have done some evil things to my desktop background…and my forehead with a very, very permanent marker.</p>
+<p>Okay, back to business. In the IDE, Click the &quot;Collaborate&quot; menu item in the top navigation, and select &quot;Manage Collaborators&quot;:</p>
+<p><img src="/screenshots/collab/collab-menu.png" alt="Collaborate Menu"></p>
+<p>A modal with a list of any collaborators you&#39;ve already added will appear. Enter the <em>Nitrous.IO</em> username, or email of the person you&#39;d like to add to your box.</p>
+<p><img src="/screenshots/collab/collab-modal-email.png" alt="Collaborate Modal"></p>
+<h4>Nitrous.IO users &amp; New Users</h4>
+<p>If you&#39;re inviting a user with their username, they&#39;ll receive an email and the box will appear in their list of boxes:</p>
+<p><img src="/screenshots/collab/shared-box.png" alt="Collaborate Modal"></p>
+<p>If they don&#39;t have an account yet, they&#39;ll receive an invite to Nitrous.IO, and will be able to access only boxes to which they&#39;ve been added as a collaborator.</p>
+<h3>Collaborating on Files</h3>
+<p>Ok, now lets get to the good part. Once you and your collaborators have opened the IDE, you can edit files simultaneously.</p>
+<p>First, and most importantly, you&#39;ll need to open the same file. Luckily, we put file status notifications in the chat window on the right of the IDE.</p>
+<p><strong>Chat</strong></p>
+<p>To open the chat, just click the little &quot;message&quot; icon on the right of the IDE. This will toggle the chat window which has a few valuable features.</p>
+<p><img src="/screenshots/collab/collab-online.png" alt="Online Users"></p>
+<p>You can check who else is online by hovering over the group icon. Alternatively, you could just write a message in the chat saying &quot;what&#39;s up&quot;, but sometimes people are around and are just ignoring you because you&#39;re not the most &quot;likable guy&quot;…bleh whatever, screw &#39;em.</p>
+<p><strong>File status</strong></p>
+<p>Assuming someone has joined the room and opened a file, you&#39;ll see a file status message in the chat window. This is a great shortcut to open the same file to start editing.</p>
+<h3>Collaborate!</h3>
+<p>Finally, now that we have the same file open, we can collaborate. But wait…there&#39;s one more, incredibly important step. You&#39;ll need to actually turn &quot;Collab Mode&quot; on for each file.</p>
+<p>To turn on Collab Mode, just click the little button on the top-right of the file:</p>
+<p><img src="/screenshots/collab/collab-button2.png" alt="Collab Mode Button"></p>
+<p>Now, when you edit, your friend will see the changes happening live in their browser. They can type at the same time and it will show up in your browser.</p>
+<p>This is really amazing when conducting remote interviews, when troubleshooting something for a friend, when pairing with someone across the globe, or just to make other geeky friends!</p>
+
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/collaboration">collaboration</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="http://www.nitrous.io">sign up</a></li>
+              <li><a href="http://www.nitrous.io/users/sign_in">sign in</a></li>
+              <li><a href="http://help.nitrous.io/admin-privacy">privacy</a></li>
+              <li><a href="http://help.nitrous.io/admin-security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

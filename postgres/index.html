@@ -6,8 +6,7 @@
 		<title>Nitrous | Help</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1371635972000.css">
-    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366246272000.css">
    </head>
 
 	<body>
@@ -56,12 +55,14 @@
 				<ul>
 						<li><a href="/categories/integrations">integrations</a></li>
 						<li><a href="/categories/databases">databases</a></li>
+						<li><a href="/categories/heroku">heroku</a></li>
+						<li><a href="/categories/postgres">postgres</a></li>
 				</ul>
 			</div>
 		</aside>
 
 		<h2 class="entry-title">Create a postgres development database</h2>
-		<div class="date-updated">Last Updated: <time class="updated" datetime="Wed Jun 19 2013 02:59:32 GMT-0700 (PDT)" pubdate>Wed Jun 19 2013 02:59:32 GMT-0700 (PDT)</time></div>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Wed Apr 17 2013 13:45:23 GMT-0700 (PDT)" pubdate>Wed Apr 17 2013 13:45:23 GMT-0700 (PDT)</time></div>
 
 		<div class="entry-content">
 			<p>This guide walks through how you can setup a Heroku Postgres database
@@ -113,14 +114,11 @@ running:
 <h4>Rails/Ruby</h4>
 <p>You can now access your database in your Rails application by doing the
 following:</p>
-<pre class="prettyprint lang-ruby">
-  ENV['TODO_APP_DEV_HOST']
-  ENV['TODO_APP_DEV_PORT']
-  ENV['TODO_APP_DEV_USER']
-  ENV['TODO_APP_DEV_PASSWORD']
-  ENV['TODO_APP_DEV_DATABASE']
-</pre>
-
+<pre><code>ENV[&#39;TODO_APP_DEV_HOST&#39;]
+ENV[&#39;TODO_APP_DEV_PORT&#39;]
+ENV[&#39;TODO_APP_DEV_USER&#39;]
+ENV[&#39;TODO_APP_DEV_PASSWORD&#39;]
+ENV[&#39;TODO_APP_DEV_DATABASE&#39;]</code></pre>
 <p>(Please note, you&#39;ll probably need to install the
 <a href="http://rubygems.org/gems/pg">pg</a> Rubygem
 before you use Postgres in a Rails app, using the following command:</p>
@@ -133,14 +131,11 @@ created.</p>
 blog</a></p>
 <h4>Node.JS</h4>
 <p>In Node.JS, you can access each of the environment variables by using:</p>
-<pre class="prettyprint">
-process.env.TODO_APP_DEV_HOST
+<pre><code>process.env.TODO_APP_DEV_HOST
 process.env.TODO_APP_DEV_PORT
 process.env.TODO_APP_DEV_USER
 process.env.TODO_APP_DEV_PASSWORD
-process.env.TODO_APP_DEV_DATABASE
-</pre>
-
+process.env.TODO_APP_DEV_DATABASE</code></pre>
 <p>(Please note, you&#39;ll probably need to install the
 <a href="https://npmjs.org/package/pg">pg</a> NPM
 before you use Postgres in a Node.JS app, using the following command:</p>
@@ -150,21 +145,15 @@ environment variables we have set up.</p>
 <p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/database-nodejs.png" alt="Postgres Settings"></p>
 <h4>Django/Python</h4>
 <p>In Python, you can access each of the environment variables by using:</p>
-<pre class="prettyprint lang-python">
-os.environ['TODO_APP_DEV_HOST']
-os.environ['TODO_APP_DEV_PORT']
-os.environ['TODO_APP_DEV_USER']
-os.environ['TODO_APP_DEV_PASSWORD']
-os.environ['TODO_APP_DEV_DATABASE']
-</pre>
-
+<pre><code>os.environ[&#39;TODO_APP_DEV_HOST&#39;]
+os.environ[&#39;TODO_APP_DEV_PORT&#39;]
+os.environ[&#39;TODO_APP_DEV_USER&#39;]
+os.environ[&#39;TODO_APP_DEV_PASSWORD&#39;]
+os.environ[&#39;TODO_APP_DEV_DATABASE&#39;]</code></pre>
 <p>(Please note, you&#39;ll probably need to install the
 <a href="http://initd.org/psycopg/">psycopg2</a> module
 before you use Postgres in a Django app, using the following command:</p>
-<pre class="prettyprint lang-python">
-pip install --user psycopg2
-</pre>
-
+<pre><code>pip install --user psycopg2</code></pre>
 <p>Here&#39;s an example of a settings.py file which initializes the Heroku
 Postgres credentials for use within a Django app.</p>
 <p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/postgres/database-python.png" alt="Postgres Settings"></p>
@@ -176,6 +165,8 @@ Postgres credentials for use within a Django app.</p>
 				<li class="label">More articles in:</li>
 					<li><a href="/categories/integrations">integrations</a></li>
 					<li><a href="/categories/databases">databases</a></li>
+					<li><a href="/categories/heroku">heroku</a></li>
+					<li><a href="/categories/postgres">postgres</a></li>
 			</ul>
 		</div>
 	</article>

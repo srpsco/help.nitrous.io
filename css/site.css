@@ -90,10 +90,10 @@ div[role=main] .logo-container h5 {
   font-weight: normal;
   color: #777;
 }
-div[role=main] .logo-container.white {
+div[role=main] .logo-container.dark-bg {
   background: #2a2c2f;
 }
-div[role=main] .logo-container.white h5 {
+div[role=main] .logo-container.dark-bg h5 {
   color: #d3d5d8;
   margin-bottom: 0;
 }

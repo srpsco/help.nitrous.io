@@ -30,14 +30,14 @@ Scalable logos for use in print, or to create custom graphics for your website.
     <a href="/images/logos/nitrous.eps">
       <img src="/images/logos/500-black.png" alt="nitrous" width="288px" />
     </a>
-    <h5>PDF black</h5>
+    <h5>EPS black</h5>
   </div>
 
   <div class="logo-container right dark-bg">
     <a href="/images/logos/nitrous-dark.eps">
       <img src="/images/logos/500-white.png" alt="nitrous-dark" width="288px" />
     </a>
-    <h5>PDF white</h5>
+    <h5>EPS white</h5>
   </div>
 </div>
 

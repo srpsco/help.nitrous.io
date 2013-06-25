@@ -46,6 +46,21 @@ table.gsc-search-box td.gsc-input {
   height: 32px !important;
 }
 
+.gsc-input-box-hover {
+  border-color: #bbb !important;
+}
+
+.gsc-input-box-focus {
+  border-color: #59e !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.gsst_b {
+  font-size: 20px !important;
+}
+
 .gsc-input-box td.gsib_a {
   padding: 6px 6px 0 !important;
 }

@@ -6,7 +6,8 @@
 		<title>Nitrous | Help</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1366246272000.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1372188740000.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
    </head>
 
 	<body>
@@ -54,28 +55,30 @@
 				</h4>
 				<ul>
 						<li><a href="/categories/faq">faq</a></li>
-						<li><a href="/categories/web-ide">web-ide</a></li>
 						<li><a href="/categories/previewing">previewing</a></li>
 				</ul>
 			</div>
 		</aside>
 
 		<h2 class="entry-title">Problems previewing my application</h2>
-		<div class="date-updated">Last Updated: <time class="updated" datetime="Wed Apr 17 2013 13:45:23 GMT-0700 (PDT)" pubdate>Wed Apr 17 2013 13:45:23 GMT-0700 (PDT)</time></div>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Tue Jun 25 2013 12:32:20 GMT-0700 (PDT)" pubdate>Tue Jun 25 2013 12:32:20 GMT-0700 (PDT)</time></div>
 
 		<div class="entry-content">
 			<p>Due to the way we handle network configuration on boxes, you will not be able to bind http servers to localhost (127.0.0.1).</p>
 <p>Your application will need to run on 0.0.0.0 or a specific IP address. Listening on port 3000 will allow you to use our preview menu for a shortcut.</p>
 <h3>Node.js example</h3>
 <p>Setting up a hello world web server on port 3000 using node.js.</p>
-<pre><code>var http = require(&#39;http&#39;);
-http.createServer(function (req, res) {
-  res.writeHead(200, {&#39;Content-Type&#39;: &#39;text/plain&#39;});
-  res.end(&#39;Hello World\n&#39;);
-}).listen(3000, &#39;0.0.0.0&#39;);
-console.log(&#39;Server running at http://0.0.0.0:3000/&#39;);</code></pre>
+<pre class="prettyprint lang-javascript">
+  var http = require('http');
+  http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World\n');
+  }).listen(3000, '0.0.0.0');
+  console.log('Server running at http://0.0.0.0:3000/');
+</pre>
+
 <p>Then make sure to run your node server in the console (substitute your file name):</p>
-<pre><code>run helloworld.js</code></pre>
+<pre><code>node helloworld.js</code></pre>
 <h3>Python example</h3>
 <p>When running a simple development server with <a href="https://docs.djangoproject.com/en/dev/intro/">Django</a>, we recommend:</p>
 <pre><code>python manage.py runserver 0.0.0.0:3000</code></pre>
@@ -95,7 +98,6 @@ console.log(&#39;Server running at http://0.0.0.0:3000/&#39;);</code></pre>
 			<ul>
 				<li class="label">More articles in:</li>
 					<li><a href="/categories/faq">faq</a></li>
-					<li><a href="/categories/web-ide">web-ide</a></li>
 					<li><a href="/categories/previewing">previewing</a></li>
 			</ul>
 		</div>

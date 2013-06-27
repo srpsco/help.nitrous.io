@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Nitrous | Help</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1372355826000.css">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
+   </head>
+
+	<body>
+		<div class="mast" id="header">
+			<div class="mast-container">
+				<ul id="topnav">
+					<li class="active"><a href="#">Help Center</a></li>
+					<li><a href="https://www.nitrous.io/chat">Live Chat</a></li>
+					<li><a href="mailto:help@nitrous.io">Contact Support</a></li>
+					<li class="login"><a href="https://www.nitrous.io/users/sign_in">Login</a></li>
+				</ul>
+				<h1 id="logo">
+					<a href="/#">Nitrous.IO</a>
+				</h1>
+			</div>
+		</div>
+
+		<div class="mast" id="search">
+			<div class="mast-container">
+				<script>
+				  (function() {
+				    var cx = '009198278762462778395:pwuaikni4bs';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
+		</div>
+
+		<div role="main">
+<div id="main-content">
+	<article class="hentry">
+
+		<aside role="meta">
+			<div role="tags">
+				<h4>
+					<i role="icon" aria-hidden="true" class="icon-tag"></i>
+					Categories:
+				</h4>
+				<ul>
+						<li><a href="/categories/integrations">integrations</a></li>
+						<li><a href="/categories/databases">databases</a></li>
+						<li><a href="/categories/getting-started">getting-started</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<h2 class="entry-title">Creating a  Rails app with Amazon RDS</h2>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Thu Jun 27 2013 18:28:40 GMT+0000 (UTC)" pubdate>Thu Jun 27 2013 18:28:40 GMT+0000 (UTC)</time></div>
+
+		<div class="entry-content">
+			<p>With <a href="http://aws.amazon.com/rds/">Amazon RDS</a> you can quickly and easily provision and maintain a MySQL, Oracle, or Microsoft SQL Server instance in the cloud.
+Lets go over how to get started with a Rails app using the Amazon RDS MySQL engine.</p>
+<h3>Prerequisites</h3>
+<p>Before we get started, make sure you have the following:</p>
+<ul>
+<li>An <a href="http://aws.amazon.com/">Amazon Web Services Account</a></li>
+<li>An <a href="https://nitrous.io">Nitrous.IO account</a></li>
+</ul>
+<h3>Adding a Security Group with Amazon RDS</h3>
+<p>Lets add the Nitrous.IO box to the Amazon RDS security group. Since This EC2 box will be running in the same region as the Amazon RDS (US West) we can add the internal IP into the Security Group.</p>
+<p>Ping your Rails box URI within the Nitrous.IO console to find the internal IP:</p>
+<pre><code>$ ping rails-box-3921.usw1.actionbox.io
+PING ec2-184-169-182-155.us-west-1.compute.amazonaws.com (10.168.125.111) 56(84) bytes of data.
+64 bytes from ip-10-168-125-111.us-west-1.compute.internal (10.168.125.111): icmp_req=1 ttl=64 time=0.130 ms</code></pre>
+<p>Login to your <a href="https://console.aws.amazon.com/rds/home">Amazon RDS Console</a>, navigate to Security Groups and create a new security group using the internal IP as a CIDR/IP connection type.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/amazon_rds_security_group.png" alt="Security Group Details"></p>
+<h3>Setting Up a New Instance with Amazon RDS</h3>
+<p>Within your <a href="https://console.aws.amazon.com/rds/home">Amazon RDS Console</a> you will want to navigate to Instances and Launch a new DB Instance. When prompted, select the MySQL Database Engine.</p>
+<p>When setting up the database remember to select the Security Group you have just created.</p>
+<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/amazon_instance_setting.png" alt="Amazon RDS Settings"></p>
+<h3>Create a Rails app on Nitrous.IO</h3>
+<p>Login to Nitrious.IO and create or open up a Rails box. Within the console enter in the following commands:</p>
+<pre><code>$ rails new blog
+$ cd blog</code></pre>
+<p>At this point you can test your Rails app with the following command:</p>
+<pre><code>$ rails server</code></pre>
+<p>Once the app is running, you can view it by navigating to <strong>Preview &gt; Port 3000</strong> in your Nitrous.IO IDE.</p>
+<h3>Setting up the Database configurations</h3>
+<p>The next step is to configure the app to connect to Amazon RDS.</p>
+<p>Within config/database.yml, configure your development environment to use the following variables:</p>
+<pre><code>development:
+ adapter: mysql2
+ encoding: utf8
+ database: &lt;%= ENV[&#39;RDS_DB_NAME&#39;] %&gt;
+ username: &lt;%= ENV[&#39;RDS_USERNAME&#39;] %&gt;
+ password: &lt;%= ENV[&#39;RDS_PASSWORD&#39;] %&gt;
+ host: &lt;%= ENV[&#39;RDS_HOSTNAME&#39;] %&gt;
+ port: &lt;%= ENV[&#39;RDS_PORT&#39;] %&gt;</code></pre>
+<p>For our test and production databases, we&#39;ll be provisioning new databases on Amazon RDS. If you want to create a test database (&quot;blog-app-test&quot;), just repeat these instructions.</p>
+<p>As you can see we have changed the adapter to use mysql2 which is the adapter Amazon RDS uses. You will also need to install the following gem in order to add support for this:</p>
+<pre><code>$ gem install mysql2
+$ bundle install</code></pre>
+<p>Add the mysql2 gem to your Gemfile:</p>
+<pre><code>gem &#39;mysql2&#39;</code></pre>
+<h3>Creating the Database</h3>
+<p>The App should now have access to the Amazon RDS instance. Run the following commands to create a new database, create a new table, and migrate it to Amazon RDS:</p>
+<pre><code>$ rake db:create
+$ rails generate controller home index
+$ rails generate scaffold Post name:string title:string content:text
+$ rake db:migrate</code></pre>
+<h3>Configuring your Routes and Adding a Link</h3>
+<p>You will first need to remove your static index file:</p>
+<pre><code>$ rm public/index.html</code></pre>
+<p>Add the following route into config/routes.rb:</p>
+<pre><code>Blog::Application.routes.draw do
+  root :to =&gt; &quot;home#index&quot;
+end</code></pre>
+<p>Open app/views/home/index.html.erb and modify it to include the following code:</p>
+<pre><code>&lt;h1&gt;Hello, Rails!&lt;/h1&gt;
+&lt;%= link_to &quot;My Blog&quot;, posts_path %&gt;</code></pre>
+<h3>Previewing the App</h3>
+<p>Once the database is successfully migrated, run the following command:</p>
+<pre><code>$ rails server</code></pre>
+<p>You can now view the Rails App by navigating to <strong>Preview &gt; Port 3000</strong> in your Nitrous.IO IDE.</p>
+<p>For our regular users: How&#39;d it go for you? If you&#39;re having trouble, you can always get in touch with us by visiting our <a href="https://action.io/chat">chatroom</a> or by <a href="mailto:support@action.io">emailing us</a>.</p>
+
+		</div>
+
+		<div class="ftags clearfix">
+			<ul>
+				<li class="label">More articles in:</li>
+					<li><a href="/categories/integrations">integrations</a></li>
+					<li><a href="/categories/databases">databases</a></li>
+					<li><a href="/categories/getting-started">getting-started</a></li>
+			</ul>
+		</div>
+	</article>
+</div>
+
+
+
+
+    </div>
+
+      <div class="mast" class="footer clearfix">
+        <div class="mast-container">
+          <footer>
+            <ul class="social">
+              <li class="twitter"><a href="https://www.twitter.com/nitrousio">twitter</a></li>
+              <li class="facebook"><a href="#">facebook</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="http://www.nitrous.io">sign up</a></li>
+              <li><a href="http://www.nitrous.io/users/sign_in">sign in</a></li>
+              <li><a href="http://help.nitrous.io/admin-privacy">privacy</a></li>
+              <li><a href="http://help.nitrous.io/admin-security">security</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  </body>
+
+</html>

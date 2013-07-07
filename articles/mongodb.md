@@ -57,12 +57,12 @@ Grab each of the values and add them as environment variables in your
 namespace your environment variables variables with the environment that you want to use your database in
 (development or test), like so:
 
-    export $MONGODB_DEVELOPMENT_HOST=ds043447.mongolab.com
-    export $MONGODB_DEVELOPMENT_PORT=43447
-    export $MONGODB_DEVELOPMENT_DB=my-awesome-apps-mongodb
-    export $MONGODB_DEVELOPMENT_USERNAME=dbuser
-    export $MONGODB_DEVELOPMENT_PASSWORD=dbpassword
-    export $MONGODB_DEVELOPMENT_URI=mongodb://${MONGODB_DEVELOPMENT_USERNAME}:${MONGODB_DEVELOPMENT_PASSWORD}@${MONGODB_DEVELOPMENT_HOST}:${MONGODB_DEVELOPMENT_PORT}/${MONGODB_DEVELOPMENT_DB}
+    export MONGODB_DEVELOPMENT_HOST=ds043447.mongolab.com
+    export MONGODB_DEVELOPMENT_PORT=43447
+    export MONGODB_DEVELOPMENT_DB=my-awesome-apps-mongodb
+    export MONGODB_DEVELOPMENT_USERNAME=dbuser
+    export MONGODB_DEVELOPMENT_PASSWORD=dbpassword
+    export MONGODB_DEVELOPMENT_URI=mongodb://${MONGODB_DEVELOPMENT_USERNAME}:${MONGODB_DEVELOPMENT_PASSWORD}@${MONGODB_DEVELOPMENT_HOST}:${MONGODB_DEVELOPMENT_PORT}/${MONGODB_DEVELOPMENT_DB}
 
 (Note: Some libraries for e.g. Ruby's Mongoid gem prefers to use the URI
 format, so "MONGODB_DEVELOPMENT_URI" is also included as part of your

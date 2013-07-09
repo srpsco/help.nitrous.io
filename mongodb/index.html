@@ -6,7 +6,7 @@
 		<title>Nitrous | Help</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1372355826000.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/all-1373380016000.css">
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
    </head>
 
@@ -61,7 +61,7 @@
 		</aside>
 
 		<h2 class="entry-title">Setting up MongoDB</h2>
-		<div class="date-updated">Last Updated: <time class="updated" datetime="Thu Jun 27 2013 17:57:06 GMT+0000 (UTC)" pubdate>Thu Jun 27 2013 17:57:06 GMT+0000 (UTC)</time></div>
+		<div class="date-updated">Last Updated: <time class="updated" datetime="Tue Jul 09 2013 14:26:56 GMT+0000 (UTC)" pubdate>Tue Jul 09 2013 14:26:56 GMT+0000 (UTC)</time></div>
 
 		<div class="entry-content">
 			<p>This guide walks through how you can setup a MongoDB database
@@ -95,11 +95,16 @@ one you set earlier while creating your database.</p>
 <p>As seen in the screenshot, <strong>ds043447.mongolab.com</strong> is the host, <strong>43447</strong>
 is the port, <strong>my-awesome-apps-mongodb</strong> is the database name, <strong>dbuser</strong>, <strong>dbpassword</strong>
 is the username/password combination that you set earlier.</p>
-<p>Grab each of the values and assign them to environment variables in your
+<p>Grab each of the values and add them as environment variables in your
 <strong>~/.bash_profile</strong> file on your Nitrous.IO box. It is good practice to
 namespace your environment variables variables with the environment that you want to use your database in
 (development or test), like so:</p>
-<p><img src="https://raw.github.com/action-io/action-assets/master/support/screenshots/mongodb/env-variables.png" alt="Env Variables"></p>
+<pre><code>export MONGODB_DEVELOPMENT_HOST=ds043447.mongolab.com
+export MONGODB_DEVELOPMENT_PORT=43447
+export MONGODB_DEVELOPMENT_DB=my-awesome-apps-mongodb
+export MONGODB_DEVELOPMENT_USERNAME=dbuser
+export MONGODB_DEVELOPMENT_PASSWORD=dbpassword
+export MONGODB_DEVELOPMENT_URI=mongodb://${MONGODB_DEVELOPMENT_USERNAME}:${MONGODB_DEVELOPMENT_PASSWORD}@${MONGODB_DEVELOPMENT_HOST}:${MONGODB_DEVELOPMENT_PORT}/${MONGODB_DEVELOPMENT_DB}</code></pre>
 <p>(Note: Some libraries for e.g. Ruby&#39;s Mongoid gem prefers to use the URI
 format, so &quot;MONGODB_DEVELOPMENT_URI&quot; is also included as part of your
 environment variables).</p>
